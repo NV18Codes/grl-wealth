@@ -5,27 +5,22 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #198754;
-    --bs-teal: #20c997;
-    --bs-cyan: #0dcaf0;
-    --bs-white: #fff;
-    --bs-gray: #6c757d;
-    --bs-gray-dark: #343a40;
     --bs-primary: #002855;
+    /* Navy Blue (trust, stability, growth) */
     --bs-secondary: #FFD700;
-    --bs-success: #b0b0b0;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
+    /* Gold (luxury, clarity) */
+    --bs-success: #B0B0B0;
+    /* Soft Gray (balance, readability) */
+    --bs-info: #0057B7;
+    /* A shade of blue from the palette */
+    --bs-warning: #FFC107;
+    /* Keeping the yellow similar */
+    --bs-danger: #DC3545;
+    /* Keeping the red */
     --bs-light: #F2F5F9;
+    /* Light gray */
     --bs-dark: #16243D;
+    /* Dark blue tone */
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
@@ -3082,7 +3077,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #015fc9;
+    background-color: #FFD700;
     border-color: #015fc9
 }
 
