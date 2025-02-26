@@ -5,25 +5,26 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-    --bs-primary: #002855;
-    /* Navy Blue (trust, stability, growth) */
-    --bs-secondary: #FFD700;
-    /* Gold (luxury, clarity) */
-    --bs-success: #B0B0B0;
-    /* Soft Gray (balance, readability) */
+    --bs-primary: #003B70;
+    /* Dark Blue - Stability, Trust */
+    --bs-secondary: #C6933D;
+    /* Gold - Luxury, Success */
+    --bs-success: #A7A7A7;
+    /* Gray - Balance, Readability */
     --bs-info: #0057B7;
-    /* A shade of blue from the palette */
+    /* Light Blue - Energy, Communication */
     --bs-warning: #FFC107;
-    /* Keeping the yellow similar */
+    /* Keeping the Yellow */
     --bs-danger: #DC3545;
-    /* Keeping the red */
-    --bs-light: #F2F5F9;
-    /* Light gray */
-    --bs-dark: #16243D;
-    /* Dark blue tone */
+    /* Keeping the Red */
+    --bs-light: #FFFFFF;
+    /* White - Clarity, Simplicity */
+    --bs-dark: #1D1D1B;
+    /* Black - Bold, Professional */
+
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
 *,
