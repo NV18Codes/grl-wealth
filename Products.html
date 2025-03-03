@@ -10,7 +10,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/grl-logo.png">
-    
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,136 +88,137 @@
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="#" class="navbar-brand p-0">
-                    <h1 class="text-primary mb-0"></i></h1>
-                    <img src="img\grl-logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-0 mx-lg-auto">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="Products.html" class="nav-item nav-link active">Products</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="studio.html" class="nav-item nav-link">Studio</a>
-                        <!-- <div class="nav-item dropdown">
-                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                    <span class="dropdown-toggle">Pages</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="feature.html" class="dropdown-item">Our Features</a>
-                                    <a href="team.html" class="dropdown-item">Our team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="FAQ.html" class="dropdown-item">FAQs</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div> -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <div class="nav-btn px-3">
-                            <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0"
-                                data-bs-toggle="modal" data-bs-target="#searchModal"><i
-                                    class="fas fa-search"></i></button>
-                            <a href="login.html" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0">
-                                Login</a>
-                        </div>
-                        <!-- <div class="nav-btn px-3">
-                                <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Search</a>
-                            </div> -->
-                    </div>
-                </div>
-                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
-                        data-wow-delay=".9s">
-                        <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px;">
-                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                        </div>
-                    </a>
-                    <div class="d-flex flex-column ms-3">
-                        <span>Call to Our Experts</span>
-                        <a href="tel:+ 0123 456 7890"><span class="text-dark">Free: + 0123 456 7890</span></a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar & Hero End -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    <!-- Modal Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center bg-primary">
-                    <div class="input-group w-75 mx-auto d-flex">
-                        <input type="search" class="form-control p-3" placeholder="keywords"
-                            aria-describedby="search-icon-1">
-                        <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
-                                class="fa fa-search"></i></span>
+        .nav-bar {
+            background-color: #002B5B;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #F0A500;
+        }
+
+        .btn-primary {
+            background-color: #F0A500;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #d18c00;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container-fluid nav-bar px-0">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="grl-logo-bg.png" alt="Logo" style="height: 50px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="Products.html" class="nav-item nav-link">Products</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="studio.html" class="nav-item nav-link">Studio</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="nav-btn px-3">
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active"
+                                aria-pressed="true">Search</a>
+                            <a href="login.html"
+                                class="btn  btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center bg-primary">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords"
+                                aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
+                                    class="fa fa-search"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal Search End -->
+        <!-- Modal Search End -->
 
 
 
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Products</h4>
-            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item active text-primary">Products</li>
-            </ol>
+
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Products</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Products</li>
+                </ol>
+            </div>
         </div>
-    </div>
-    <!-- Header End -->
-    <!-- Despriction section-->
-    <style>
-        .container3 {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            background-color: #ffffff;
-            width: 95%;
-        }
+        <!-- Header End -->
+        <!-- Despriction section-->
+        <style>
+            .container3 {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                background-color: #ffffff;
+                width: 95%;
+            }
 
-        .section {
-            /* width: 45%; */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            justify-content: center;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+            .section {
+                /* width: 45%; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                justify-content: center;
+                padding: 20px;
+                background-color: #ffffff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
 
-        .section h2 {
-            color: 002855;
-        }
+            .section h2 {
+                color: 002855;
+            }
 
-        .section p {
-            color: #555555;
-        }
+            .section p {
+                color: #555555;
+            }
 
-        /* .progress-bar {
+            /* .progress-bar {
             background-color: #e0e0e0;
             border-radius: 13px;
             padding: 3px;
@@ -245,20 +246,20 @@
         .progress-bar-95 div {
             width: 95%;
         } */
-    </style>
-    <div class="container3">
-        <div class="section">
-            <div class="text-center mx-auto py-5" style="max-width: 800px;">
-                <h2 class="fw-bold text-uppercase">Our Exclusive Products</h2>
-                <p class="mt-3 text-muted">
-                    We believe in offering a well-curated selection of financial and non-financial products,
-                    tailored to diverse asset classes and risk profiles. Our commitment is to provide
-                    holistic, unbiased, and strategic solutions—ensuring seamless access to a dynamic
-                    portfolio that grows with your needs.
-                </p>
+        </style>
+        <div class="container3">
+            <div class="section">
+                <div class="text-center mx-auto py-5" style="max-width: 800px;">
+                    <h2 class="fw-bold text-uppercase">Our Exclusive Products</h2>
+                    <p class="mt-3 text-muted">
+                        We believe in offering a well-curated selection of financial and non-financial products,
+                        tailored to diverse asset classes and risk profiles. Our commitment is to provide
+                        holistic, unbiased, and strategic solutions—ensuring seamless access to a dynamic
+                        portfolio that grows with your needs.
+                    </p>
+                </div>
             </div>
-        </div>
-        <!-- <h3>MUTUAL FUNDS</h3>
+            <!-- <h3>MUTUAL FUNDS</h3>
         <div class="progress-bar progress-bar-85">
             <div></div>
         </div>
@@ -282,150 +283,150 @@
         <div class="progress-bar progress-bar-95">
             <div></div>
         </div> -->
-    </div>
+        </div>
 
-    </div>
+        </div>
 
 
-    <style>
-        .flip-box {
-            background-color: transparent;
-            width: 400px;
-            height: 300px;
-            border: 1px solid #f1f1f1;
-            perspective: 1000px;
-        }
-
-        .flip-box-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-        }
-
-        .flip-box:hover .flip-box-inner {
-            transform: rotatex(180deg);
-        }
-
-        .flip-box-front,
-        .flip-box-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        .flip-box-front {
-            background-color: #bbb;
-            color: black;
-        }
-
-        .flip-box-back {
-            background-color: #555;
-            color: white;
-            transform: rotatex(180deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: .5rem;
-        }
-
-        .mutualfund-pink {
-            background-color: #f8615a;
-            display: flex;
-            gap: .5rem;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .fixedincome-blue {
-            background-color: #5abee8;
-            display: flex;
-            gap: .5rem;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .Capitalmarket-yellow {
-            background-color: #efbd49;
-            display: flex;
-            gap: .5rem;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .portfolio-orange {
-            background-color: #ff6c23;
-            display: flex;
-            gap: .5rem;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .realeaste-green {
-            background-color: #95bb04;
-            display: flex;
-            gap: .5rem;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .insurance-red {
-            background-color: #e30a12;
-            color: white;
-            display: flex;
-            gap: .5rem;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contain3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            margin: 4rem 0rem;
-        }
-
-        .offer-head {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 1rem;
-            gap: 1rem;
-        }
-
-        .offer-head p {
-            width: 75%;
-        }
-
-        .offer-head h1 {
-            font-size: xx-large;
-        }
-
-        @media screen and (max-width:850px) {
-            .contain3 {
-                display: flex;
-                flex-direction: column;
+        <style>
+            .flip-box {
+                background-color: transparent;
+                width: 400px;
+                height: 300px;
+                border: 1px solid #f1f1f1;
+                perspective: 1000px;
             }
 
-        }
-    </style>
-    </head>
+            .flip-box-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+            }
 
-    <body>
+            .flip-box:hover .flip-box-inner {
+                transform: rotatex(180deg);
+            }
 
-        <!-- <div class="offer-head">
+            .flip-box-front,
+            .flip-box-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            .flip-box-front {
+                background-color: #bbb;
+                color: black;
+            }
+
+            .flip-box-back {
+                background-color: #555;
+                color: white;
+                transform: rotatex(180deg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: .5rem;
+            }
+
+            .mutualfund-pink {
+                background-color: #f8615a;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .fixedincome-blue {
+                background-color: #5abee8;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .Capitalmarket-yellow {
+                background-color: #efbd49;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .portfolio-orange {
+                background-color: #ff6c23;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .realeaste-green {
+                background-color: #95bb04;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .insurance-red {
+                background-color: #e30a12;
+                color: white;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .contain3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                margin: 4rem 0rem;
+            }
+
+            .offer-head {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem;
+                gap: 1rem;
+            }
+
+            .offer-head p {
+                width: 75%;
+            }
+
+            .offer-head h1 {
+                font-size: xx-large;
+            }
+
+            @media screen and (max-width:850px) {
+                .contain3 {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <!-- <div class="offer-head">
               
                 <p>Having an adequate product basket across different assets classes, risk profiles and by different
                     companies
@@ -436,42 +437,42 @@
                     growing financial & non-financial products.</p>
             </div> -->
 
-        <div class="contain3">
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div class="mutualfund-pink" style="height: 300px ; width: 400px; align-items: center; display: flex;
+            <div class="contain3">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="mutualfund-pink" style="height: 300px ; width: 400px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">MUTUAL FUNDS
-                            <img style="color: white;" src="img/products/icons8-fund-accounting-50.png" alt="">
+                                <img style="color: white;" src="img/products/icons8-fund-accounting-50.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <p>We have all the mutual fund schemes on offer by virtually all the Asset Management
+                                Companies (AMCs) in the
+                                country. As a client, you can access any scheme with us, either in physical mode or even
+                                in a demat
+                                /stock-exchange mode with Trading Account services.</p>
                         </div>
                     </div>
-                    <div class="flip-box-back">
-                        <p>We have all the mutual fund schemes on offer by virtually all the Asset Management
-                            Companies (AMCs) in the
-                            country. As a client, you can access any scheme with us, either in physical mode or even
-                            in a demat
-                            /stock-exchange mode with Trading Account services.</p>
-                    </div>
                 </div>
-            </div>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div class="fixedincome-blue" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="fixedincome-blue" style="height: 300px ; width: 400px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">FIXED INCOME
-                            <img src="img/products/icons8-euro-money-50.png" alt="">
+                                <img src="img/products/icons8-euro-money-50.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <p>We also offer clients with diverse fixed income products, namely Non-Convertible
+                                Debentures (NCDs),
+                                Infrastructure and RBI Bonds, Company Deposits, etc. from some of the leading companies,
+                                institutions in
+                                India.</p>
                         </div>
                     </div>
-                    <div class="flip-box-back">
-                        <p>We also offer clients with diverse fixed income products, namely Non-Convertible
-                            Debentures (NCDs),
-                            Infrastructure and RBI Bonds, Company Deposits, etc. from some of the leading companies,
-                            institutions in
-                            India.</p>
-                    </div>
                 </div>
-            </div>
-            <!-- <div class="flip-box">
+                <!-- <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div class="Capitalmarket-yellow" style="height: 300px ; width: 400px; align-items: center; display: flex;
@@ -488,25 +489,25 @@
                     </div>
                 </div> -->
             </div>
-        </div>
-        <div class="contain3">
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div class="portfolio-orange" style="height: 300px ; width: 400px; align-items: center; display: flex;
+            </div>
+            <div class="contain3">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="portfolio-orange" style="height: 300px ; width: 400px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">PORTFOLIO MANAGEMENT SERVICES <img
-                                src="img/products/icons8-capital-omega-50.png" alt=""></div>
-                    </div>
-                    <div class="flip-box-back">
-                        <p>We offer Portfolio Management Services (PMS) strategies with direct equity and mutual
-                            funds as the
-                            underlying products from the leading PMS providers in India. Some of our PMS strategies
-                            are exclusive in the
-                            market which can only be subscribed through us.</p>
+                                    src="img/products/icons8-capital-omega-50.png" alt=""></div>
+                        </div>
+                        <div class="flip-box-back">
+                            <p>We offer Portfolio Management Services (PMS) strategies with direct equity and mutual
+                                funds as the
+                                underlying products from the leading PMS providers in India. Some of our PMS strategies
+                                are exclusive in the
+                                market which can only be subscribed through us.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="flip-box">
+                <!-- <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div class="realeaste-green" style="height: 300px ; width: 400px; align-items: center; display: flex;
@@ -522,256 +523,258 @@
                     </div>
                 </div>
             </div> -->
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div class="insurance-red" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="insurance-red" style="height: 300px ; width: 400px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">INSURANCE
-                            <img src="img/products/icons8-umbrella-50.png">
+                                <img src="img/products/icons8-umbrella-50.png">
+                            </div>
                         </div>
-                    </div>
-                    <div class=" flip-box-back">
-                        <p>Experience quality risk advisory and management services with our insurance
-                            solutions. We offer the best of
-                            risk management advisory available in insurance.</p>
+                        <div class=" flip-box-back">
+                            <p>Experience quality risk advisory and management services with our insurance
+                                solutions. We offer the best of
+                                risk management advisory available in insurance.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-xl-9">
-                        <div class="mb-5">
-                            <div class="row g-4">
-                                <div class="col-md-6 col-lg-6 col-xl-5">
-                                    <div class="footer-item">
-                                        <a href="index.html" class="p-0">
-                                            <h3 class="text-white"></h3>
-                                            <img src="img/grl-logo.png" alt="Logo">
+            <!-- Footer Start -->
+            <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-xl-9">
+                            <div class="mb-5">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-6 col-xl-5">
+                                        <div class="footer-item">
+                                            <a href="index.html" class="p-0">
+                                                <h3 class="text-white"></h3>
+                                                <img src="img/grl-logo.png" alt="Logo">
+                                            </a>
+                                            <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr
+                                                est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                            <div class="footer-btn d-flex">
+                                                <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                                <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                        class="fab fa-instagram"></i></a>
+                                                <a class="btn btn-md-square rounded-circle me-0" href="#"><i
+                                                        class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-3">
+                                        <div class="footer-item">
+                                            <h4 class="text-white mb-4">Useful Links</h4>
+                                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About
+                                                Us</a>
+                                            <a href="Products.html"><i class="fas fa-angle-right me-2"></i>
+                                                Products</a>
+                                            <a href="service.html"><i class="fas fa-angle-right me-2"></i>
+                                                Services</a>
+                                            <a href="studio.html"><i class="fas fa-angle-right me-2"></i>Studio</a>
+                                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-4">
+                                        <div class="footer-item">
+                                            <h4 class="mb-4 text-white">Instagram</h4>
+                                            <div class="row g-3">
+                                                <div class="col-4">
+                                                    <div class="footer-instagram rounded">
+                                                        <img src="img/instagram-footer-1.jpg" class="img-fluid w-100"
+                                                            alt="">
+                                                        <div class="footer-search-icon">
+                                                            <a href="img/instagram-footer-1.jpg"
+                                                                data-lightbox="footerInstagram-1" class="my-auto"><i
+                                                                    class="fas fa-link text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="footer-instagram rounded">
+                                                        <img src="img/instagram-footer-2.jpg" class="img-fluid w-100"
+                                                            alt="">
+                                                        <div class="footer-search-icon">
+                                                            <a href="img/instagram-footer-2.jpg"
+                                                                data-lightbox="footerInstagram-2" class="my-auto"><i
+                                                                    class="fas fa-link text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="footer-instagram rounded">
+                                                        <img src="img/instagram-footer-3.jpg" class="img-fluid w-100"
+                                                            alt="">
+                                                        <div class="footer-search-icon">
+                                                            <a href="img/instagram-footer-3.jpg"
+                                                                data-lightbox="footerInstagram-3" class="my-auto"><i
+                                                                    class="fas fa-link text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="footer-instagram rounded">
+                                                        <img src="img/instagram-footer-4.jpg" class="img-fluid w-100"
+                                                            alt="">
+                                                        <div class="footer-search-icon">
+                                                            <a href="img/instagram-footer-4.jpg"
+                                                                data-lightbox="footerInstagram-4" class="my-auto"><i
+                                                                    class="fas fa-link text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="footer-instagram rounded">
+                                                        <img src="img/instagram-footer-5.jpg" class="img-fluid w-100"
+                                                            alt="">
+                                                        <div class="footer-search-icon">
+                                                            <a href="img/instagram-footer-5.jpg"
+                                                                data-lightbox="footerInstagram-5" class="my-auto"><i
+                                                                    class="fas fa-link text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="footer-instagram rounded">
+                                                        <img src="img/instagram-footer-6.jpg" class="img-fluid w-100"
+                                                            alt="">
+                                                        <div class="footer-search-icon">
+                                                            <a href="img/instagram-footer-6.jpg"
+                                                                data-lightbox="footerInstagram-6" class="my-auto"><i
+                                                                    class="fas fa-link text-white"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                                <div class="row g-0">
+                                    <div class="col-12">
+                                        <div class="row g-4">
+                                            <div class="col-lg-6 col-xl-4">
+                                                <div class="d-flex">
+                                                    <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="text-white">Address</h4>
+                                                        <p class="mb-0">123 Street New York.USA</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-xl-4">
+                                                <div class="d-flex">
+                                                    <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                        <i class="fas fa-envelope fa-2x"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="text-white">Mail Us</h4>
+                                                        <p class="mb-0">info@example.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-xl-4">
+                                                <div class="d-flex">
+                                                    <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                        <i class="fa fa-phone-alt fa-2x"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="text-white">Telephone</h4>
+                                                        <p class="mb-0">(+012) 3456 7890</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3">
+                            <div class="footer-item">
+                                <h4 class="text-white mb-4">Newsletter</h4>
+                                <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="position-relative rounded-pill mb-4">
+                                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                        placeholder="Enter your email">
+                                    <button type="button"
+                                        class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                </div>
+                                <div class="d-flex flex-shrink-0">
+                                    <div class="footer-btn">
+                                        <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
+                                            data-wow-delay=".9s">
+                                            <i class="fa fa-phone-alt fa-2x"></i>
+                                            <div class="position-absolute" style="top: 2px; right: 12px;">
+                                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                            </div>
                                         </a>
-                                        <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr
-                                            est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-                                        <div class="footer-btn d-flex">
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                    class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-0" href="#"><i
-                                                    class="fab fa-linkedin-in"></i></a>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-3">
-                                    <div class="footer-item">
-                                        <h4 class="text-white mb-4">Useful Links</h4>
-                                        <a href="about.html"><i class="fas fa-angle-right me-2"></i> About
-                                            Us</a>
-                                        <a href="Products.html"><i class="fas fa-angle-right me-2"></i>
-                                            Products</a>
-                                        <a href="service.html"><i class="fas fa-angle-right me-2"></i>
-                                            Services</a>
-                                        <a href="studio.html"><i class="fas fa-angle-right me-2"></i>Studio</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                    <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                        <span>Call to Our Experts</span>
+                                        <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456
+                                                7890</span></a>
                                     </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="footer-item">
-                                        <h4 class="mb-4 text-white">Instagram</h4>
-                                        <div class="row g-3">
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-1.jpg" class="img-fluid w-100"
-                                                        alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-1.jpg"
-                                                            data-lightbox="footerInstagram-1" class="my-auto"><i
-                                                                class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-2.jpg" class="img-fluid w-100"
-                                                        alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-2.jpg"
-                                                            data-lightbox="footerInstagram-2" class="my-auto"><i
-                                                                class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-3.jpg" class="img-fluid w-100"
-                                                        alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-3.jpg"
-                                                            data-lightbox="footerInstagram-3" class="my-auto"><i
-                                                                class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-4.jpg" class="img-fluid w-100"
-                                                        alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-4.jpg"
-                                                            data-lightbox="footerInstagram-4" class="my-auto"><i
-                                                                class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-5.jpg" class="img-fluid w-100"
-                                                        alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-5.jpg"
-                                                            data-lightbox="footerInstagram-5" class="my-auto"><i
-                                                                class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-6.jpg" class="img-fluid w-100"
-                                                        alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-6.jpg"
-                                                            data-lightbox="footerInstagram-6" class="my-auto"><i
-                                                                class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
-                            <div class="row g-0">
-                                <div class="col-12">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Address</h4>
-                                                    <p class="mb-0">123 Street New York.USA</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-envelope fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Mail Us</h4>
-                                                    <p class="mb-0">info@example.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Telephone</h4>
-                                                    <p class="mb-0">(+012) 3456 7890</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum
-                                dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="position-relative rounded-pill mb-4">
-                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                    placeholder="Enter your email">
-                                <button type="button"
-                                    class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
-                            <div class="d-flex flex-shrink-0">
-                                <div class="footer-btn">
-                                    <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
-                                        data-wow-delay=".9s">
-                                        <i class="fa fa-phone-alt fa-2x"></i>
-                                        <div class="position-absolute" style="top: 2px; right: 12px;">
-                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                    <span>Call to Our Experts</span>
-                                    <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456
-                                            7890</span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Footer End -->
+            <!-- Footer End -->
 
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                    class="fas fa-copyright text-light me-2"></i>GRL-Wealth,</a>, All
-                            right
-                            reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-start text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com"> Aspiron Khuze
-                            Technologies Pvt Ltd</a>
+            <!-- Copyright Start -->
+            <div class="container-fluid copyright py-4">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6 text-center text-md-end mb-md-0">
+                            <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                        class="fas fa-copyright text-light me-2"></i>GRL-Wealth,</a>, All
+                                right
+                                reserved.</span>
+                        </div>
+                        <div class="col-md-6 text-center text-md-start text-body">
+                            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                            Designed By <a class="border-bottom text-white" href="https://htmlcodex.com"> Aspiron Khuze
+                                Technologies Pvt Ltd</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Copyright End -->
+            <!-- Copyright End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i
+                    class="fa fa-arrow-up"></i></a>
 
 
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <!-- JavaScript Libraries -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/counterup/counterup.min.js"></script>
+            <script src="lib/lightbox/js/lightbox.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+        </body>
 
 </html>

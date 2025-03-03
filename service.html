@@ -10,7 +10,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/grl-logo.png">
-    
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,116 +88,116 @@
     </div>
     <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="#" class="navbar-brand p-0">
-                    <h1 class="text-primary mb-0"></i></h1>
-                    <img src="img\grl-logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-0 mx-lg-auto">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="Products.html" class="nav-item nav-link">Products</a>
-                        <a href="service.html" class="nav-item nav-link active">Services</a>
-                        <a href="studio.html" class="nav-item nav-link">Studio</a>
-                        <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                <span class="dropdown-toggle">Pages</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a href="feature.html" class="dropdown-item">Our Features</a>
-                                <a href="team.html" class="dropdown-item">Our team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div> -->
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <div class="nav-btn px-3">
-                            <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0"
-                                data-bs-toggle="modal" data-bs-target="#searchModal"><i
-                                    class="fas fa-search"></i></button>
-                            <a href="login.html" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0">
-                                Login</a>
-                        </div>
-                        <!-- <div class="nav-btn px-3">
-                            <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Search</a>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                    <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
-                        data-wow-delay=".9s">
-                        <i class="fa fa-phone-alt fa-2x"></i>
-                        <div class="position-absolute" style="top: 7px; right: 12px;">
-                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                        </div>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav-bar {
+            background-color: #002B5B;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #F0A500;
+        }
+
+        .btn-primary {
+            background-color: #F0A500;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #d18c00;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container-fluid nav-bar px-0">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="grl-logo-bg.png" alt="Logo" style="height: 50px;">
                     </a>
-                    <div class="d-flex flex-column ms-3">
-                        <span>Call to Our Experts</span>
-                        <a href="tel:+ 0123 456 7890"><span class="text-dark">Free: + 0123 456 7890</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="Products.html" class="nav-item nav-link">Products</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="studio.html" class="nav-item nav-link">Studio</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="nav-btn px-3">
+                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active"
+                                aria-pressed="true">Search</a>
+                            <a href="login.html"
+                                class="btn  btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
-    <!-- Navbar & Hero End -->
-
-    <!-- Modal Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center bg-primary">
-                    <div class="input-group w-75 mx-auto d-flex">
-                        <input type="search" class="form-control p-3" placeholder="keywords"
-                            aria-describedby="search-icon-1">
-                        <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
-                                class="fa fa-search"></i></span>
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center bg-primary">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords"
+                                aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
+                                    class="fa fa-search"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal Search End -->
+        <!-- Modal Search End -->
 
 
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
-            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item active text-primary">Service</li>
-            </ol>
-        </div>
-    </div>
-    <!-- Header End -->
 
-    <!-- Service Start -->
-    <div class="container-fluid service py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Our Services</h4>
-                <h1 class="display-4 mb-4">We Provide Best Services</h1>
-                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis
-                    cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt
-                    sint dolorem autem obcaecati, ipsam mollitia hic.
-                </p>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Services</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Service</li>
+                </ol>
             </div>
-            <!-- <div class="row g-4 justify-content-center">
+        </div>
+        <!-- Header End -->
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Services</h4>
+                    <h1 class="display-4 mb-4">We Provide Best Services</h1>
+                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis
+                        cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt
+                        sint dolorem autem obcaecati, ipsam mollitia hic.
+                    </p>
+                </div>
+                <!-- <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="service-item">
                         <div class="service-img">
@@ -282,222 +282,223 @@
 
         </div> -->
 
-            <style>
-                .sidebar {
-                    /* width: 900px; */
-                    background-color: #fff;
-                    display: flex;
-                    flex-direction: column;
-                    /* align-items: center; */
-                    /* justify-content: center; */
-                    padding: 10px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                }
-
-                .sidebar button {
-                    display: block;
-
-                    width: 100%;
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    background-color: #002855;
-                    color: #fff;
-                    border: none;
-                    cursor: pointer;
-                }
-
-                .sidebar button:hover {
-                    background-color: #FFD700;
-                }
-
-                .content {
-                    flex-grow: 1;
-                    padding: 7px;
-                    background-color: #f4f4f4;
-                }
-
-                .content h1 {
-                    color: #002855;
-                }
-
-                .content p {
-                    margin-bottom: 20px;
-                }
-
-                .content label {
-                    display: block;
-                    margin-bottom: 5px;
-                }
-
-                .content input {
-                    width: calc(100% - 20px);
-                    padding: 8px;
-                    margin-bottom: 20px;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                }
-
-                .content button {
-                    padding: 10px 20px;
-                    background-color: #002855;
-                    color: #fff;
-                    border: none;
-                    cursor: pointer;
-                }
-
-                .content button.reset {
-                    background-color: #ccc;
-                }
-
-                .img-service {
-
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid black;
-                    box-shadow: #002855;
-                    border-radius: 10px;
-                    padding: .5rem;
-                    gap: .5rem;
-                }
-
-                .img-service img {
-                    height: 3rem;
-                    width: 3rem;
-                }
-
-                .hidden {
-                    display: none;
-                }
-
-                nav {
-                    background-color: #ffffff;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                    padding: 1rem;
-                    display: flex;
-                    align-items: center;
-                }
-
-                .menu-container {
-                    position: relative;
-                }
-
-                .menu {
-
-                    display: none;
-                    position: absolute;
-                    top: 3rem;
-                    left: 0;
-                    background-color: #ffffff;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                    padding: 1rem;
-                    border-radius: 0.375rem;
-                }
-
-                .menu button {
-                    display: block;
-                    padding: 0.5rem 1rem;
-                    color: #4b5563;
-                    text-decoration: none;
-                }
-
-                .menu button:hover {
-                    background-color: #e5e7eb;
-                }
-
-                .show-menu {
-                    display: block;
-                }
-
-                @media (min-width: 850px) {
-                    nav {
-                        display: none;
-
-                    }
-
-                }
-
-                @media screen and (max-width:850px) {
+                <style>
                     .sidebar {
+                        /* width: 900px; */
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        /* align-items: center; */
+                        /* justify-content: center; */
+                        padding: 10px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .sidebar button {
+                        display: block;
+
+                        width: 100%;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        background-color: #002855;
+                        color: #fff;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .sidebar button:hover {
+                        background-color: #FFD700;
+                    }
+
+                    .content {
+                        flex-grow: 1;
+                        padding: 7px;
+                        background-color: #f4f4f4;
+                    }
+
+                    .content h1 {
+                        color: #002855;
+                    }
+
+                    .content p {
+                        margin-bottom: 20px;
+                    }
+
+                    .content label {
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+
+                    .content input {
+                        width: calc(100% - 20px);
+                        padding: 8px;
+                        margin-bottom: 20px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                    }
+
+                    .content button {
+                        padding: 10px 20px;
+                        background-color: #002855;
+                        color: #fff;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .content button.reset {
+                        background-color: #ccc;
+                    }
+
+                    .img-service {
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid black;
+                        box-shadow: #002855;
+                        border-radius: 10px;
+                        padding: .5rem;
+                        gap: .5rem;
+                    }
+
+                    .img-service img {
+                        height: 3rem;
+                        width: 3rem;
+                    }
+
+                    .hidden {
                         display: none;
                     }
-                }
-            </style>
-            <script>
-                function toggleMenu() {
-                    document.getElementById('navMenu').classList.toggle('show-menu');
-                }
-            </script>
-            <nav>
-                <div class="menu-container">
 
-                    <img style="width: 20px;" src="hamburger.png" alt="Menu" class="w-10 h-10 cursor-pointer"
-                        onclick="toggleMenu()">
-                    <div id="navMenu" class="menu" style="width: 20rem;">
-                        <button onclick="showForm('form1')" style="width: 150px;font-size: small;">SIP Planner</button>
-                        <button onclick="showForm('form2')" style="width: 150px; font-size: small;">SIP Delay Cost
-                            Calculator</button>
-                        <button onclick="showForm('form3')" style="width: 150px;font-size: small;">SIP Need
-                            Calculator</button>
-                        <button onclick="showForm('form4')" style="width: 150px; font-size: small;">Child Education
-                            Planner</button>
-                        <!-- <button onclick="showForm('form5')" style="width: 150px;font-size: small;">Child Marriage
+                    nav {
+                        background-color: #ffffff;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                        padding: 1rem;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .menu-container {
+                        position: relative;
+                    }
+
+                    .menu {
+
+                        display: none;
+                        position: absolute;
+                        top: 3rem;
+                        left: 0;
+                        background-color: #ffffff;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                        padding: 1rem;
+                        border-radius: 0.375rem;
+                    }
+
+                    .menu button {
+                        display: block;
+                        padding: 0.5rem 1rem;
+                        color: #4b5563;
+                        text-decoration: none;
+                    }
+
+                    .menu button:hover {
+                        background-color: #e5e7eb;
+                    }
+
+                    .show-menu {
+                        display: block;
+                    }
+
+                    @media (min-width: 850px) {
+                        nav {
+                            display: none;
+
+                        }
+
+                    }
+
+                    @media screen and (max-width:850px) {
+                        .sidebar {
+                            display: none;
+                        }
+                    }
+                </style>
+                <script>
+                    function toggleMenu() {
+                        document.getElementById('navMenu').classList.toggle('show-menu');
+                    }
+                </script>
+                <nav>
+                    <div class="menu-container">
+
+                        <img style="width: 20px;" src="hamburger.png" alt="Menu" class="w-10 h-10 cursor-pointer"
+                            onclick="toggleMenu()">
+                        <div id="navMenu" class="menu" style="width: 20rem;">
+                            <button onclick="showForm('form1')" style="width: 150px;font-size: small;">SIP
+                                Planner</button>
+                            <button onclick="showForm('form2')" style="width: 150px; font-size: small;">SIP Delay Cost
+                                Calculator</button>
+                            <button onclick="showForm('form3')" style="width: 150px;font-size: small;">SIP Need
+                                Calculator</button>
+                            <button onclick="showForm('form4')" style="width: 150px; font-size: small;">Child Education
+                                Planner</button>
+                            <!-- <button onclick="showForm('form5')" style="width: 150px;font-size: small;">Child Marriage
                             Planner</button>
                         <button onclick="showForm('form6')" style="width: 150px; font-size: small;">Retirement Planner
                         </button> -->
-                        <button onclick="showForm('form7')" style="width: 150px;font-size: small;">Single Goal
-                            Planner</button>
-                        <button onclick="showForm('form8')" style="width: 150px; font-size: small;">Buy a
-                            Car/Home</button>
-                        <button onclick="showForm('form9')" style="width: 150px;font-size: small;">EMI
-                            Calculator</button>
-                        <button onclick="showForm('form10')" style="width: 150px; font-size: small;">Save Tax with
-                            ELSS</button>
-
-                    </div>
-                </div>
-            </nav>
-            <div style="display: flex;">
-
-                <style>
-                    .img-service button:active {
-                        background-color: #002855;
-                        color: #FFD700;
-                    }
-                </style>
-                <div class="sidebar">
-
-
-                    <div style="display: flex; gap: 1rem; margin: 1rem;">
-                        <div class="img-service">
-                            <img src="img/services/icons8-money-box-24.png" alt="">
-                            <button onclick="showForm('form1')" style="width: 150px;font-size: small;"
-                                id="my-button">SIP
+                            <button onclick="showForm('form7')" style="width: 150px;font-size: small;">Single Goal
                                 Planner</button>
-                        </div>
-                        <div class="img-service">
-                            <img src="img/services/icons8-money-50.png" alt="">
-                            <button onclick="showForm('form2')" style="width: 150px; font-size: small;"
-                                id="my-button">SIP Delay Cost
+                            <button onclick="showForm('form8')" style="width: 150px; font-size: small;">Buy a
+                                Car/Home</button>
+                            <button onclick="showForm('form9')" style="width: 150px;font-size: small;">EMI
                                 Calculator</button>
+                            <button onclick="showForm('form10')" style="width: 150px; font-size: small;">Save Tax with
+                                ELSS</button>
+
                         </div>
                     </div>
-                    <div style="display: flex; gap: 1rem; margin: 1rem;">
-                        <div class="img-service">
-                            <img src="img/services/icons8-growth-50.png" alt="">
-                            <button onclick="showForm('form3')" style="width: 150px;font-size: small;"
-                                id="my-button">SIP Need
-                                Calculator</button>
+                </nav>
+                <div style="display: flex;">
+
+                    <style>
+                        .img-service button:active {
+                            background-color: #002855;
+                            color: #FFD700;
+                        }
+                    </style>
+                    <div class="sidebar">
+
+
+                        <div style="display: flex; gap: 1rem; margin: 1rem;">
+                            <div class="img-service">
+                                <img src="img/services/icons8-money-box-24.png" alt="">
+                                <button onclick="showForm('form1')" style="width: 150px;font-size: small;"
+                                    id="my-button">SIP
+                                    Planner</button>
+                            </div>
+                            <div class="img-service">
+                                <img src="img/services/icons8-money-50.png" alt="">
+                                <button onclick="showForm('form2')" style="width: 150px; font-size: small;"
+                                    id="my-button">SIP Delay Cost
+                                    Calculator</button>
+                            </div>
                         </div>
-                        <div class="img-service">
-                            <img src="img/services/icons8-graduation-50.png" alt="">
-                            <button onclick="showForm('form4')" style="width: 150px; font-size: small;"
-                                id="my-button">Child Education
-                                Planner</button>
+                        <div style="display: flex; gap: 1rem; margin: 1rem;">
+                            <div class="img-service">
+                                <img src="img/services/icons8-growth-50.png" alt="">
+                                <button onclick="showForm('form3')" style="width: 150px;font-size: small;"
+                                    id="my-button">SIP Need
+                                    Calculator</button>
+                            </div>
+                            <div class="img-service">
+                                <img src="img/services/icons8-graduation-50.png" alt="">
+                                <button onclick="showForm('form4')" style="width: 150px; font-size: small;"
+                                    id="my-button">Child Education
+                                    Planner</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- <div style="display: flex; gap: 1rem; margin: 1rem;">
+                        <!-- <div style="display: flex; gap: 1rem; margin: 1rem;">
                         <div class="img-service">
                             <img src="img/services/icons8-wedding-rings-50.png" alt="">
                             <button onclick="showForm('form5')" style="width: 150px;font-size: small;">Child Marriage
@@ -510,179 +511,193 @@
                             </button>
                         </div>
                     </div> -->
-                    <div style="display: flex; gap: 1rem;margin: 1rem;">
-                        <div class="img-service">
-                            <img src="img/services/icons8-archery-66.png" alt="">
-                            <button onclick="showForm('form7')" style="width: 150px;font-size: small;"
-                                id="my-button">Single Goal
-                                Planner</button>
+                        <div style="display: flex; gap: 1rem;margin: 1rem;">
+                            <div class="img-service">
+                                <img src="img/services/icons8-archery-66.png" alt="">
+                                <button onclick="showForm('form7')" style="width: 150px;font-size: small;"
+                                    id="my-button">Single Goal
+                                    Planner</button>
+                            </div>
+                            <div class="img-service">
+                                <img src="img/services/icons8-home-50.png" alt="">
+                                <button onclick="showForm('form8')" style="width: 150px; font-size: small;"
+                                    id="my-button">Buy a
+                                    Car/Home</button>
+                            </div>
                         </div>
-                        <div class="img-service">
-                            <img src="img/services/icons8-home-50.png" alt="">
-                            <button onclick="showForm('form8')" style="width: 150px; font-size: small;"
-                                id="my-button">Buy a
-                                Car/Home</button>
+                        <div style="display: flex; gap: 1rem;margin: 1rem;">
+                            <div class="img-service">
+                                <img src="img/services/icons8-calculator-50.png" alt="">
+                                <button onclick="showForm('form9')" style="width: 150px;font-size: small;"
+                                    id="my-button">EMI
+                                    Calculator</button>
+                            </div>
+                            <div class="img-service">
+                                <img src="img/services/icons8-percentage-50.png" alt="">
+                                <button onclick="showForm('form10')" style="width: 150px; font-size: small;"
+                                    id="my-button">Save Tax with
+                                    ELSS</button>
+                            </div>
                         </div>
+
                     </div>
-                    <div style="display: flex; gap: 1rem;margin: 1rem;">
-                        <div class="img-service">
-                            <img src="img/services/icons8-calculator-50.png" alt="">
-                            <button onclick="showForm('form9')" style="width: 150px;font-size: small;"
-                                id="my-button">EMI
-                                Calculator</button>
-                        </div>
-                        <div class="img-service">
-                            <img src="img/services/icons8-percentage-50.png" alt="">
-                            <button onclick="showForm('form10')" style="width: 150px; font-size: small;"
-                                id="my-button">Save Tax with
-                                ELSS</button>
-                        </div>
-                    </div>
 
-                </div>
+                    <!-- sip planner -->
+                    <div class="content">
+                        <form id="form1" class="form-content">
+                            <h1>SIP Planner</h1>
+                            <p>SIP or Systematic Investment Plan is a very popular and effective way of investing
+                                regularly
+                                into a
+                                mutual fund scheme. A monthly SIP in a mutual fund equity scheme can be a very good tool
+                                for
+                                planning for your future long-term goals in life and also as an effective tool to save
+                                regularly.
+                            </p>
+                            <label for="investmentAmount">Monthly Investment Amount</label>
+                            <input type="text" id="investmentAmount" name="investmentAmount">
 
-                <!-- sip planner -->
-                <div class="content">
-                    <form id="form1" class="form-content">
-                        <h1>SIP Planner</h1>
-                        <p>SIP or Systematic Investment Plan is a very popular and effective way of investing regularly
-                            into a
-                            mutual fund scheme. A monthly SIP in a mutual fund equity scheme can be a very good tool for
-                            planning for your future long-term goals in life and also as an effective tool to save
-                            regularly.
-                        </p>
-                        <label for="investmentAmount">Monthly Investment Amount</label>
-                        <input type="text" id="investmentAmount" name="investmentAmount">
+                            <label for="investmentPeriod">Investment Period (in years)</label>
+                            <input type="text" id="investmentPeriod" name="investmentPeriod">
 
-                        <label for="investmentPeriod">Investment Period (in years)</label>
-                        <input type="text" id="investmentPeriod" name="investmentPeriod">
+                            <label for="expectedReturn">Expected Return (in %)</label>
+                            <input type="text" id="expectedReturn" name="expectedReturn">
 
-                        <label for="expectedReturn">Expected Return (in %)</label>
-                        <input type="text" id="expectedReturn" name="expectedReturn">
-
-                        <button type="button">Calculate</button>
-                        <button type="reset" class="reset">Reset</button>
-                    </form>
-                </div>
-
-                <!-- sip delay cost calculator -->
-
-                <div class="content">
-
-                    <form id="form2" class="form-content hidden">
-                        <h1>SIP Delay Cost Calculator</h1>
-                        <p>Usually, we often tend to delay investing even in absence of any strong reasons. And we do
-                            happily
-                            think that a few months would not matter much. But the reality is that even small delays can
-                            make a
-                            huge impact on your wealth in the long term.</p>
-                        <label for="investmentAmount">Monthly Investment Amount:</label>
-                        <div class="inline-label">
-                            Rs. <input type="text" id="investmentAmount" name="investmentAmount">
-                        </div>
-
-                        <label for="investmentPeriod">Investment Period:</label>
-                        <div class="inline-label">
-                            <input type="text" id="investmentPeriod" name="investmentPeriod"> Years
-                        </div>
-
-                        <label for="expectedReturn">Expected Return:</label>
-                        <div class="inline-label">
-                            <input type="text" id="expectedReturn" name="expectedReturn"> % Annualized
-                        </div>
-
-                        <label for="delayMonths">Delay in starting SIP From Today:</label>
-                        <div class="inline-label">
-                            <input type="text" id="delayMonths" name="delayMonths"> Months
-                        </div>
-
-                        <div class="buttons">
                             <button type="button">Calculate</button>
                             <button type="reset" class="reset">Reset</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- sip need calculator -->
-                <div class="content">
-                    <form id="form3" class="form-content hidden">
-                        <h1>SIP Need Calculator</h1>
-                        <p>SIP or Systematic Investment Plan is a very popular and effective way of investing regularly
-                            into a
-                            mutual fund scheme. A monthly SIP in a mutual fund equity scheme can be very good tool for
-                            planning
-                            for your future long term goals in life and also as an effective tool to save regularly. A
-                            monthly
-                            SIP can be started with as little as Rs.500 every month with no upper limit with the option
-                            of
-                            investing in a wide choice of mutual fund schemes - both equity and debt in nature. It is a
-                            recommended investment option suitable for every investor.</p>
-                        <p>This tool can help you how much you need to invest monthly to accumulate a target amount in
-                            future.
-                        </p>
-                        <div class="form-group">
-                            <label for="investment-horizon">Investment Horizon :</label>
-                            <input type="number" id="investment-horizon" name="investment-horizon" placeholder="Years">
-                        </div>
-                        <div class="form-group">
-                            <label for="target-amount">Target Amount Needed :</label>
-                            <input type="number" id="target-amount" name="target-amount" placeholder="Rs.">
-                        </div>
-                        <div class="form-group">
-                            <label for="expected-returns">Expected Returns on Investments :</label>
-                            <input type="number" id="expected-returns" name="expected-returns"
-                                placeholder="% Annualized">
-                        </div>
-                        <div class="buttons">
-                            <button type="button">Submit </button>
-                            <button type="reset" class="reset">Reset</button>
-                        </div>
-                    </form>
-
-                    <!-- Child Education Planne -->
-
-                    <div class="content">
-                        <form id="form4" class="form-content hidden">
-                            <h1>Child Education Planner</h1>
-                            <p>As a responsible and caring parent, you want your child to get the very best start in
-                                life. To
-                                ensure that your child is ready for a successful life, education would play a very
-                                important
-                                role.</p>
-                            <p>We understand this critical goal in your life and bring to you this "Child Higher
-                                Education"
-                                planning tool to determine the investments that you need to make in order to fulfill the
-                                dreams
-                                of your loved ones.</p>
-                            <label for="years-to-maturity">Years to maturity:</label>
-                            <input type="number" id="years-to-maturity" name="years-to-maturity"> Years
-                            <span class="tooltip">?</span>
-                            <br>
-                            <label for="education-cost-today">Education Cost Today:</label>
-                            <input type="number" id="education-cost-today" name="education-cost-today"> Rs.
-                            <span class="tooltip">?</span>
-                            <br>
-                            <label for="estimated-increase-savings">Estimated Increase in your Savings:</label>
-                            <input type="number" id="estimated-increase-savings" name="estimated-increase-savings"
-                                value="0"> %
-                            <span class="tooltip">Yearly</span>
-                            <br>
-                            <label for="expected-rate-returns">Expected Rate of Returns:</label>
-                            <input type="number" id="expected-rate-returns" name="expected-rate-returns" value="12"> %
-                            <span class="tooltip">Yearly</span>
-                            <br>
-                            <label for="expected-rate-inflation">Expected Rate of Inflation:</label>
-                            <input type="number" id="expected-rate-inflation" name="expected-rate-inflation" value="10">
-                            %
-                            <span class="tooltip">Yearly</span>
-                            <br>
-                            <button type="submit">Submit</button>
-                            <button type="reset">Reset</button>
                         </form>
                     </div>
 
+                    <!-- sip delay cost calculator -->
 
-                    <!-- Child Marriage Planner  -->
-                    <!-- <div class="content"> 
+                    <div class="content">
+
+                        <form id="form2" class="form-content hidden">
+                            <h1>SIP Delay Cost Calculator</h1>
+                            <p>Usually, we often tend to delay investing even in absence of any strong reasons. And we
+                                do
+                                happily
+                                think that a few months would not matter much. But the reality is that even small delays
+                                can
+                                make a
+                                huge impact on your wealth in the long term.</p>
+                            <label for="investmentAmount">Monthly Investment Amount:</label>
+                            <div class="inline-label">
+                                Rs. <input type="text" id="investmentAmount" name="investmentAmount">
+                            </div>
+
+                            <label for="investmentPeriod">Investment Period:</label>
+                            <div class="inline-label">
+                                <input type="text" id="investmentPeriod" name="investmentPeriod"> Years
+                            </div>
+
+                            <label for="expectedReturn">Expected Return:</label>
+                            <div class="inline-label">
+                                <input type="text" id="expectedReturn" name="expectedReturn"> % Annualized
+                            </div>
+
+                            <label for="delayMonths">Delay in starting SIP From Today:</label>
+                            <div class="inline-label">
+                                <input type="text" id="delayMonths" name="delayMonths"> Months
+                            </div>
+
+                            <div class="buttons">
+                                <button type="button">Calculate</button>
+                                <button type="reset" class="reset">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- sip need calculator -->
+                    <div class="content">
+                        <form id="form3" class="form-content hidden">
+                            <h1>SIP Need Calculator</h1>
+                            <p>SIP or Systematic Investment Plan is a very popular and effective way of investing
+                                regularly
+                                into a
+                                mutual fund scheme. A monthly SIP in a mutual fund equity scheme can be very good tool
+                                for
+                                planning
+                                for your future long term goals in life and also as an effective tool to save regularly.
+                                A
+                                monthly
+                                SIP can be started with as little as Rs.500 every month with no upper limit with the
+                                option
+                                of
+                                investing in a wide choice of mutual fund schemes - both equity and debt in nature. It
+                                is a
+                                recommended investment option suitable for every investor.</p>
+                            <p>This tool can help you how much you need to invest monthly to accumulate a target amount
+                                in
+                                future.
+                            </p>
+                            <div class="form-group">
+                                <label for="investment-horizon">Investment Horizon :</label>
+                                <input type="number" id="investment-horizon" name="investment-horizon"
+                                    placeholder="Years">
+                            </div>
+                            <div class="form-group">
+                                <label for="target-amount">Target Amount Needed :</label>
+                                <input type="number" id="target-amount" name="target-amount" placeholder="Rs.">
+                            </div>
+                            <div class="form-group">
+                                <label for="expected-returns">Expected Returns on Investments :</label>
+                                <input type="number" id="expected-returns" name="expected-returns"
+                                    placeholder="% Annualized">
+                            </div>
+                            <div class="buttons">
+                                <button type="button">Submit </button>
+                                <button type="reset" class="reset">Reset</button>
+                            </div>
+                        </form>
+
+                        <!-- Child Education Planne -->
+
+                        <div class="content">
+                            <form id="form4" class="form-content hidden">
+                                <h1>Child Education Planner</h1>
+                                <p>As a responsible and caring parent, you want your child to get the very best start in
+                                    life. To
+                                    ensure that your child is ready for a successful life, education would play a very
+                                    important
+                                    role.</p>
+                                <p>We understand this critical goal in your life and bring to you this "Child Higher
+                                    Education"
+                                    planning tool to determine the investments that you need to make in order to fulfill
+                                    the
+                                    dreams
+                                    of your loved ones.</p>
+                                <label for="years-to-maturity">Years to maturity:</label>
+                                <input type="number" id="years-to-maturity" name="years-to-maturity"> Years
+                                <span class="tooltip">?</span>
+                                <br>
+                                <label for="education-cost-today">Education Cost Today:</label>
+                                <input type="number" id="education-cost-today" name="education-cost-today"> Rs.
+                                <span class="tooltip">?</span>
+                                <br>
+                                <label for="estimated-increase-savings">Estimated Increase in your Savings:</label>
+                                <input type="number" id="estimated-increase-savings" name="estimated-increase-savings"
+                                    value="0"> %
+                                <span class="tooltip">Yearly</span>
+                                <br>
+                                <label for="expected-rate-returns">Expected Rate of Returns:</label>
+                                <input type="number" id="expected-rate-returns" name="expected-rate-returns" value="12">
+                                %
+                                <span class="tooltip">Yearly</span>
+                                <br>
+                                <label for="expected-rate-inflation">Expected Rate of Inflation:</label>
+                                <input type="number" id="expected-rate-inflation" name="expected-rate-inflation"
+                                    value="10">
+                                %
+                                <span class="tooltip">Yearly</span>
+                                <br>
+                                <button type="submit">Submit</button>
+                                <button type="reset">Reset</button>
+                            </form>
+                        </div>
+
+
+                        <!-- Child Marriage Planner  -->
+                        <!-- <div class="content"> 
                 <form id="form5" class="form-content hidden"></form>
                 <h2>Child Marriage Planner</h2>
                 <p>Plan your child's future marriage expenses by calculating the required investments today.</p>
@@ -718,8 +733,8 @@
             </div> 
           -->
 
-                    <!-- Retirement Planning Calculator -->
-                    <!-- <div class="content">
+                        <!-- Retirement Planning Calculator -->
+                        <!-- <div class="content">
 
                         <form id="form6" class="form-content hidden">
                             <h1>Retirement Planning Calculator</h1>
@@ -789,492 +804,512 @@
                         </form>
                     </div> -->
 
-                    <!-- Single Goal Planner -->
-                    <div class="content">
+                        <!-- Single Goal Planner -->
+                        <div class="content">
 
-                        <form id="form7" class="form-content hidden">
-                            <h2>Single Goal Planner</h2>
-                            <p>
-                                We often have the financial goal of accumulating a target amount in the future for the
-                                purpose
-                                of financing any business investment, charity, inheritance, or personal target.
-                                Whatever the reason, defining an objective for investments is the right way to plan your
-                                savings.
-                                One important thing to remember is to account for price rise or inflation, which
-                                decreases the
-                                value of money over time.
-                            </p>
-                            <p>
-                                This tool helps you calculate the amount of investments you need to make for a targeted
-                                future
-                                amount, both with and without inflation considerations.
-                            </p>
-                            <div class="form-group">
-                                <label for="cost">Present Cost of Goal:</label>
-                                <input type="number" id="cost" placeholder="Enter amount">
-                                <span class="unit">Rs.</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="years">Years to Maturity:</label>
-                                <input type="number" id="years" placeholder="Enter years">
-                                <span class="unit">Years</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="savings">Estimated Increase in Savings:</label>
-                                <input type="number" id="savings" value="0">
-                                <span class="unit"> % Yearly</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="returns">Expected Rate of Returns:</label>
-                                <input type="number" id="returns" value="10">
-                                <span class="unit">% Yearly</span>
-                            </div>
-
-                            <div class="form-group">
-                                <input type="checkbox" id="inflation-toggle" onclick="toggleInflation()">
-                                <label for="inflation-toggle">Consider Inflation:</label>
-                                <input type="number" id="inflation" value="8" disabled>
-                                <span class="unit">% Yearly</span>
-                            </div>
-
-                            <div class="btn-group">
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <button type="reset" class="reset-btn">Reset</button>
-                            </div>
-                        </form>
-                    </div>
-
-
-                    <!-- Buy a Car / Home Planner -->
-                    <div class="content">
-
-                        <form id="form8" class="form-content hidden">
-                            <h2>Buy a Car / Home Planner</h2>
-                            <p>
-                                We often desire to have our own home and a nice car for our family. Planning for these
-                                goals is
-                                crucial early in our careers so that we can be free from outstanding loan amounts by the
-                                time we
-                                retire.
-                            </p>
-                            <p>
-                                This tool helps you plan smartly for purchasing an asset, whether it's a home, car, or
-                                any
-                                property in the future.
-                            </p>
-                            <div class="form-group">
-                                <label for="cost">Present Cost of the Asset:</label>
-                                <input type="number" id="cost" placeholder="Enter amount">
-                                <span class="unit">Rs.</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="years">Purchase after years:</label>
-                                <input type="number" id="years" placeholder="Enter years">
-                                <span class="unit">Years</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="returns">Expected Rate of Returns:</label>
-                                <input type="number" id="returns" value="10">
-                                <span class="unit">% Yearly</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inflation">Expected Rate of Inflation:</label>
-                                <input type="number" id="inflation" value="8">
-                                <span class="unit">% Yearly</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="down-payment">Down Payment component for Loan:</label>
-                                <input type="number" id="down-payment" value="15">
-                                <span class="unit">% </span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="equivalent-amount">Equivalent to Amount:</label>
-                                <input type="number" id="equivalent-amount" disabled>
-                                <span class="unit">Rs.</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="loan-interest">Expected Interest Rate of Loan:</label>
-                                <input type="number" id="loan-interest" value="12">
-                                <span class="unit">% Yearly</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="loan-duration">Duration of the Loan:</label>
-                                <input type="number" id="loan-duration" placeholder="Enter years">
-                                <span class="unit">Years</span>
-                            </div>
-
-                            <div class="btn-group">
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <button type="reset" class="reset-btn">Reset</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- EMI Calculator -->
-                    <div class="content">
-
-                        <form id="form9" class="form-content hidden">
-                            <h2>EMI Calculator</h2>
-                            <p>
-                                EMI or Equated Monthly Installments are the fixed monthly payments you will need to pay
-                                to a
-                                loan provider during the entire loan duration.
-                            </p>
-                            <p>
-                                The fixed EMI has two components - interest on outstanding loan and the principal
-                                repayment.
-                                During the initial years, the interest component is much higher and as the loan period
-                                progresses, the principal component starts growing. EMIs are very common as most big
-                                assets
-                                purchased by us are financed by loans like homes, cars, etc.
-                            </p>
-                            <p>
-                                This tool can help you to easily calculate the EMI for your loans.
-                            </p>
-                            <div class="form-group">
-                                <label for="loan-amount">Loan Amount:</label>
-                                <input type="number" id="loan-amount" placeholder="Enter amount">
-                                <span class="unit">Rs.</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="interest-rate">Expected Interest Rate of Loan:</label>
-                                <input type="number" id="interest-rate" value="10.00">
-                                <span class="unit">% Yearly</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="loan-duration">Duration of the Loan (Years):</label>
-                                <input type="number" id="loan-duration" placeholder="Enter years">
-                                <span class="unit">Years</span>
-                            </div>
-
-                            <div class="btn-group">
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <button type="reset" class="reset-btn">Reset</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- Save Tax with ELSS -->
-                    <div class="content">
-
-                        <form id="form10" class="form-content hidden">
-                            <h2>Save Tax with ELSS</h2>
-                            <p>
-                                ELSS or Equity Linked Savings Scheme, a type of mutual fund scheme, is a very popular
-                                tax saving
-                                product eligible for deduction under section 80C of the IT Act. For FY 2024-25, you can
-                                claim a
-                                deduction of up to Rs. 1.5 Lakh of investments in ELSS, though there is no upper limit
-                                on how
-                                much you can invest.
-                            </p>
-                            <p>
-                                Under section 80C, ELSS is the only product that offers equity exposure with potential
-                                for
-                                attractive long-term returns and the least lock-in period of only 3 years. Additionally,
-                                there
-                                is no long-term (>1 year) capital gains tax in ELSS, making it more attractive.
-                            </p>
-                            <p>
-                                This tool helps you calculate the amount of tax savings by investing in ELSS.
-                            </p>
-
-                            <a href="#" class="tax-link">Know your Tax Slab</a>
-                            <div class="form-group">
-                                <label>Your applicable Tax Slab Rate:</label>
-                                <input type="radio" name="tax-slab" value="5%"> 5%
-                                <input type="radio" name="tax-slab" value="20%"> 20%
-                                <input type="radio" name="tax-slab" value="30%"> 30%
-                            </div>
-
-                            <div class="form-group">
-                                <label for="investment">Investment Planned for ELSS:</label>
-                                <input type="number" id="investment" placeholder="Enter amount">
-                                <span class="unit">Rs.</span>
-                            </div>
-
-                            <div class="btn-group">
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <button type="reset" class="reset-btn">Reset</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <script>
-                        function showForm(formId) {
-                            document.querySelectorAll('.form-content').forEach(form => {
-                                form.classList.add('hidden');
-                            });
-                            document.getElementById(formId).classList.remove('hidden');
-                        }
-
-
-                    </script>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid testimonial pb-5">
-        <div class="container pb-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                <h4 class="text-primary">Testimonial</h4>
-                <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
-                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci
-                    facilis
-                    cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa
-                    deserunt
-                    sint dolorem autem obcaecati, ipsam mollitia hic.
-                </p>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
-                <div class="testimonial-item bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-4  col-lg-4 col-xl-3">
-                            <div class="h-100">
-                                <img src="https://up.yimg.com/ib/th?id=OIP.7O4_GREtLbxqPdJCTmfatQHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
-                                    class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                            </div>
-                        </div>
-                        <div class="col-8 col-lg-8 col-xl-9">
-                            <div class="d-flex flex-column my-auto text-start p-4">
-                                <h4 class="text-dark mb-0">Client Name</h4>
-                                <p class="mb-3">Profession</p>
-                                <div class="d-flex text-primary mb-3">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-                                    error
-                                    molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus
-                                    quisquam,
+                            <form id="form7" class="form-content hidden">
+                                <h2>Single Goal Planner</h2>
+                                <p>
+                                    We often have the financial goal of accumulating a target amount in the future for
+                                    the
+                                    purpose
+                                    of financing any business investment, charity, inheritance, or personal target.
+                                    Whatever the reason, defining an objective for investments is the right way to plan
+                                    your
+                                    savings.
+                                    One important thing to remember is to account for price rise or inflation, which
+                                    decreases the
+                                    value of money over time.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-4  col-lg-4 col-xl-3">
-                            <div class="h-100">
-                                <img src="https://up.yimg.com/ib/th?id=OIP.7O4_GREtLbxqPdJCTmfatQHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
-                                    class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                            </div>
-                        </div>
-                        <div class="col-8 col-lg-8 col-xl-9">
-                            <div class="d-flex flex-column my-auto text-start p-4">
-                                <h4 class="text-dark mb-0">Client Name</h4>
-                                <p class="mb-3">Profession</p>
-                                <div class="d-flex text-primary mb-3">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star text-body"></i>
-                                </div>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-                                    error
-                                    molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus
-                                    quisquam,
+                                <p>
+                                    This tool helps you calculate the amount of investments you need to make for a
+                                    targeted
+                                    future
+                                    amount, both with and without inflation considerations.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light rounded">
-                    <div class="row g-0">
-                        <div class="col-4  col-lg-4 col-xl-3">
-                            <div class="h-100">
-                                <img src="https://up.yimg.com/ib/th?id=OIP.7O4_GREtLbxqPdJCTmfatQHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
-                                    class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                            </div>
-                        </div>
-                        <div class="col-8 col-lg-8 col-xl-9">
-                            <div class="d-flex flex-column my-auto text-start p-4">
-                                <h4 class="text-dark mb-0">Client Name</h4>
-                                <p class="mb-3">Profession</p>
-                                <div class="d-flex text-primary mb-3">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star text-body"></i>
-                                    <i class="fas fa-star text-body"></i>
+                                <div class="form-group">
+                                    <label for="cost">Present Cost of Goal:</label>
+                                    <input type="number" id="cost" placeholder="Enter amount">
+                                    <span class="unit">Rs.</span>
                                 </div>
-                                <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-                                    error
-                                    molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus
-                                    quisquam,
-                                </p>
-                            </div>
+
+                                <div class="form-group">
+                                    <label for="years">Years to Maturity:</label>
+                                    <input type="number" id="years" placeholder="Enter years">
+                                    <span class="unit">Years</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="savings">Estimated Increase in Savings:</label>
+                                    <input type="number" id="savings" value="0">
+                                    <span class="unit"> % Yearly</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="returns">Expected Rate of Returns:</label>
+                                    <input type="number" id="returns" value="10">
+                                    <span class="unit">% Yearly</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="checkbox" id="inflation-toggle" onclick="toggleInflation()">
+                                    <label for="inflation-toggle">Consider Inflation:</label>
+                                    <input type="number" id="inflation" value="8" disabled>
+                                    <span class="unit">% Yearly</span>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button type="reset" class="reset-btn">Reset</button>
+                                </div>
+                            </form>
                         </div>
+
+
+                        <!-- Buy a Car / Home Planner -->
+                        <div class="content">
+
+                            <form id="form8" class="form-content hidden">
+                                <h2>Buy a Car / Home Planner</h2>
+                                <p>
+                                    We often desire to have our own home and a nice car for our family. Planning for
+                                    these
+                                    goals is
+                                    crucial early in our careers so that we can be free from outstanding loan amounts by
+                                    the
+                                    time we
+                                    retire.
+                                </p>
+                                <p>
+                                    This tool helps you plan smartly for purchasing an asset, whether it's a home, car,
+                                    or
+                                    any
+                                    property in the future.
+                                </p>
+                                <div class="form-group">
+                                    <label for="cost">Present Cost of the Asset:</label>
+                                    <input type="number" id="cost" placeholder="Enter amount">
+                                    <span class="unit">Rs.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="years">Purchase after years:</label>
+                                    <input type="number" id="years" placeholder="Enter years">
+                                    <span class="unit">Years</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="returns">Expected Rate of Returns:</label>
+                                    <input type="number" id="returns" value="10">
+                                    <span class="unit">% Yearly</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inflation">Expected Rate of Inflation:</label>
+                                    <input type="number" id="inflation" value="8">
+                                    <span class="unit">% Yearly</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="down-payment">Down Payment component for Loan:</label>
+                                    <input type="number" id="down-payment" value="15">
+                                    <span class="unit">% </span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="equivalent-amount">Equivalent to Amount:</label>
+                                    <input type="number" id="equivalent-amount" disabled>
+                                    <span class="unit">Rs.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="loan-interest">Expected Interest Rate of Loan:</label>
+                                    <input type="number" id="loan-interest" value="12">
+                                    <span class="unit">% Yearly</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="loan-duration">Duration of the Loan:</label>
+                                    <input type="number" id="loan-duration" placeholder="Enter years">
+                                    <span class="unit">Years</span>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button type="reset" class="reset-btn">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- EMI Calculator -->
+                        <div class="content">
+
+                            <form id="form9" class="form-content hidden">
+                                <h2>EMI Calculator</h2>
+                                <p>
+                                    EMI or Equated Monthly Installments are the fixed monthly payments you will need to
+                                    pay
+                                    to a
+                                    loan provider during the entire loan duration.
+                                </p>
+                                <p>
+                                    The fixed EMI has two components - interest on outstanding loan and the principal
+                                    repayment.
+                                    During the initial years, the interest component is much higher and as the loan
+                                    period
+                                    progresses, the principal component starts growing. EMIs are very common as most big
+                                    assets
+                                    purchased by us are financed by loans like homes, cars, etc.
+                                </p>
+                                <p>
+                                    This tool can help you to easily calculate the EMI for your loans.
+                                </p>
+                                <div class="form-group">
+                                    <label for="loan-amount">Loan Amount:</label>
+                                    <input type="number" id="loan-amount" placeholder="Enter amount">
+                                    <span class="unit">Rs.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="interest-rate">Expected Interest Rate of Loan:</label>
+                                    <input type="number" id="interest-rate" value="10.00">
+                                    <span class="unit">% Yearly</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="loan-duration">Duration of the Loan (Years):</label>
+                                    <input type="number" id="loan-duration" placeholder="Enter years">
+                                    <span class="unit">Years</span>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button type="reset" class="reset-btn">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Save Tax with ELSS -->
+                        <div class="content">
+
+                            <form id="form10" class="form-content hidden">
+                                <h2>Save Tax with ELSS</h2>
+                                <p>
+                                    ELSS or Equity Linked Savings Scheme, a type of mutual fund scheme, is a very
+                                    popular
+                                    tax saving
+                                    product eligible for deduction under section 80C of the IT Act. For FY 2024-25, you
+                                    can
+                                    claim a
+                                    deduction of up to Rs. 1.5 Lakh of investments in ELSS, though there is no upper
+                                    limit
+                                    on how
+                                    much you can invest.
+                                </p>
+                                <p>
+                                    Under section 80C, ELSS is the only product that offers equity exposure with
+                                    potential
+                                    for
+                                    attractive long-term returns and the least lock-in period of only 3 years.
+                                    Additionally,
+                                    there
+                                    is no long-term (>1 year) capital gains tax in ELSS, making it more attractive.
+                                </p>
+                                <p>
+                                    This tool helps you calculate the amount of tax savings by investing in ELSS.
+                                </p>
+
+                                <a href="#" class="tax-link">Know your Tax Slab</a>
+                                <div class="form-group">
+                                    <label>Your applicable Tax Slab Rate:</label>
+                                    <input type="radio" name="tax-slab" value="5%"> 5%
+                                    <input type="radio" name="tax-slab" value="20%"> 20%
+                                    <input type="radio" name="tax-slab" value="30%"> 30%
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="investment">Investment Planned for ELSS:</label>
+                                    <input type="number" id="investment" placeholder="Enter amount">
+                                    <span class="unit">Rs.</span>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button type="reset" class="reset-btn">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <script>
+                            function showForm(formId) {
+                                document.querySelectorAll('.form-content').forEach(form => {
+                                    form.classList.add('hidden');
+                                });
+                                document.getElementById(formId).classList.remove('hidden');
+                            }
+
+
+                        </script>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+        <!-- Service End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-xl-9">
-                    <div class="mb-5">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-6 col-xl-5">
-                                <div class="footer-item">
-                                    <a href="index.html" class="p-0">
-                                        <h3 class="text-white"></h3>
-                                        <img src="img/grl-logo.png" alt="Logo">
-                                    </a>
-                                    <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr
-                                        est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-                                    <div class="footer-btn d-flex">
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-3">
-                                <div class="footer-item">
-                                    <h4 class="text-white mb-4">Useful Links</h4>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-4">
-                                <div class="footer-item">
-                                    <h4 class="mb-4 text-white">Instagram</h4>
-                                    <div class="row g-3">
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/instagram-footer-1.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <a href="img/instagram-footer-1.jpg"
-                                                        data-lightbox="footerInstagram-1" class="my-auto"><i
-                                                            class="fas fa-link text-white"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/instagram-footer-2.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <a href="img/instagram-footer-2.jpg"
-                                                        data-lightbox="footerInstagram-2" class="my-auto"><i
-                                                            class="fas fa-link text-white"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/instagram-footer-3.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <a href="img/instagram-footer-3.jpg"
-                                                        data-lightbox="footerInstagram-3" class="my-auto"><i
-                                                            class="fas fa-link text-white"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/instagram-footer-4.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <a href="img/instagram-footer-4.jpg"
-                                                        data-lightbox="footerInstagram-4" class="my-auto"><i
-                                                            class="fas fa-link text-white"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/instagram-footer-5.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <a href="img/instagram-footer-5.jpg"
-                                                        data-lightbox="footerInstagram-5" class="my-auto"><i
-                                                            class="fas fa-link text-white"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="footer-instagram rounded">
-                                                <img src="img/instagram-footer-6.jpg" class="img-fluid w-100" alt="">
-                                                <div class="footer-search-icon">
-                                                    <a href="img/instagram-footer-6.jpg"
-                                                        data-lightbox="footerInstagram-6" class="my-auto"><i
-                                                            class="fas fa-link text-white"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
+                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci
+                        facilis
+                        cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa
+                        deserunt
+                        sint dolorem autem obcaecati, ipsam mollitia hic.
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item bg-light rounded">
                         <div class="row g-0">
-                            <div class="col-12">
-                                <div class="row g-4">
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="https://up.yimg.com/ib/th?id=OIP.7O4_GREtLbxqPdJCTmfatQHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                                        class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Client Name</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                        error
+                                        molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus
+                                        quisquam,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="https://up.yimg.com/ib/th?id=OIP.7O4_GREtLbxqPdJCTmfatQHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                                        class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Client Name</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                        error
+                                        molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus
+                                        quisquam,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="https://up.yimg.com/ib/th?id=OIP.7O4_GREtLbxqPdJCTmfatQHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                                        class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Client Name</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                                        error
+                                        molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus
+                                        quisquam,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-9">
+                        <div class="mb-5">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-6 col-xl-5">
+                                    <div class="footer-item">
+                                        <a href="index.html" class="p-0">
+                                            <h3 class="text-white"></h3>
+                                            <img src="img/grl-logo.png" alt="Logo">
+                                        </a>
+                                        <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr
+                                            est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                        <div class="footer-btn d-flex">
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-0" href="#"><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-3">
+                                    <div class="footer-item">
+                                        <h4 class="text-white mb-4">Useful Links</h4>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="footer-item">
+                                        <h4 class="mb-4 text-white">Instagram</h4>
+                                        <div class="row g-3">
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/instagram-footer-1.jpg" class="img-fluid w-100"
+                                                        alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/instagram-footer-1.jpg"
+                                                            data-lightbox="footerInstagram-1" class="my-auto"><i
+                                                                class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <h4 class="text-white">Address</h4>
-                                                <p class="mb-0">123 Street New York.USA</p>
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/instagram-footer-2.jpg" class="img-fluid w-100"
+                                                        alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/instagram-footer-2.jpg"
+                                                            data-lightbox="footerInstagram-2" class="my-auto"><i
+                                                                class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/instagram-footer-3.jpg" class="img-fluid w-100"
+                                                        alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/instagram-footer-3.jpg"
+                                                            data-lightbox="footerInstagram-3" class="my-auto"><i
+                                                                class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/instagram-footer-4.jpg" class="img-fluid w-100"
+                                                        alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/instagram-footer-4.jpg"
+                                                            data-lightbox="footerInstagram-4" class="my-auto"><i
+                                                                class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/instagram-footer-5.jpg" class="img-fluid w-100"
+                                                        alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/instagram-footer-5.jpg"
+                                                            data-lightbox="footerInstagram-5" class="my-auto"><i
+                                                                class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="footer-instagram rounded">
+                                                    <img src="img/instagram-footer-6.jpg" class="img-fluid w-100"
+                                                        alt="">
+                                                    <div class="footer-search-icon">
+                                                        <a href="img/instagram-footer-6.jpg"
+                                                            data-lightbox="footerInstagram-6" class="my-auto"><i
+                                                                class="fas fa-link text-white"></i></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-envelope fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Mail Us</h4>
-                                                <p class="mb-0">info@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Address</h4>
+                                                    <p class="mb-0">123 Street New York.USA</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 col-xl-4">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fa fa-phone-alt fa-2x"></i>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fas fa-envelope fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Mail Us</h4>
+                                                    <p class="mb-0">info@example.com</p>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <h4 class="text-white">Telephone</h4>
-                                                <p class="mb-0">(+012) 3456 7890</p>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fa fa-phone-alt fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Telephone</h4>
+                                                    <p class="mb-0">(+012) 3456 7890</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1282,83 +1317,82 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="text-white mb-4">Newsletter</h4>
-                        <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem
-                            ipsum
-                            dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="position-relative rounded-pill mb-4">
-                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                                placeholder="Enter your email">
-                            <button type="button"
-                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                        </div>
-                        <div class="d-flex flex-shrink-0">
-                            <div class="footer-btn">
-                                <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
-                                    data-wow-delay=".9s">
-                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                    <div class="position-absolute" style="top: 2px; right: 12px;">
-                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                    </div>
-                                </a>
+                    <div class="col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Newsletter</h4>
+                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="position-relative rounded-pill mb-4">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                    placeholder="Enter your email">
+                                <button type="button"
+                                    class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
                             </div>
-                            <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                <span>Call to Our Experts</span>
-                                <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456
-                                        7890</span></a>
+                            <div class="d-flex flex-shrink-0">
+                                <div class="footer-btn">
+                                    <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada"
+                                        data-wow-delay=".9s">
+                                        <i class="fa fa-phone-alt fa-2x"></i>
+                                        <div class="position-absolute" style="top: 2px; right: 12px;">
+                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                    <span>Call to Our Experts</span>
+                                    <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456
+                                            7890</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
+        <!-- Footer End -->
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-6 text-center text-md-end mb-md-0">
-                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
-                                class="fas fa-copyright text-light me-2"></i>GRL-Wealth</a>, All right
-                        reserved.</span>
-                </div>
-                <div class="col-md-6 text-center text-md-start text-body">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://www.aspironkhuze.com//credit-removal". ***/-->
-                    Designed By <a class="border-bottom text-white" href="https://www.aspironkhuze.com/">Aspiron
-                        Khuze
-                        Technologies Pvt Ltd</a>
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-end mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                    class="fas fa-copyright text-light me-2"></i>GRL-Wealth</a>, All right
+                            reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-start text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://www.aspironkhuze.com//credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://www.aspironkhuze.com/">Aspiron
+                            Khuze
+                            Technologies Pvt Ltd</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Copyright End -->
+        <!-- Copyright End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 
 </html>
