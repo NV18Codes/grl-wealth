@@ -371,13 +371,13 @@
                         display: none;
                     }
 
-                    nav {
+                    /* nav {
                         background-color: #ffffff;
                         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                         padding: 1rem;
                         display: flex;
                         align-items: center;
-                    }
+                    } */
 
                     .menu-container {
                         position: relative;
@@ -431,32 +431,26 @@
                 </script>
                 <nav>
                     <div class="menu-container">
+                        <div style="width: 10rem;   gap: 1rem;" onclick="toggleMenu()">
 
-                        <img style="width: 20px;" src="hamburger.png" alt="Menu" class="w-10 h-10 cursor-pointer"
-                            onclick="toggleMenu()">
-                        <div id="navMenu" class="menu" style="width: 20rem;">
-                            <button onclick="showForm('form1')" style="width: 150px;font-size: small;">SIP
-                                Planner</button>
-                            <button onclick="showForm('form2')" style="width: 150px; font-size: small;">SIP Delay Cost
-                                Calculator</button>
-                            <button onclick="showForm('form3')" style="width: 150px;font-size: small;">SIP Need
-                                Calculator</button>
-                            <button onclick="showForm('form4')" style="width: 150px; font-size: small;">Child Education
-                                Planner</button>
-                            <!-- <button onclick="showForm('form5')" style="width: 150px;font-size: small;">Child Marriage
-                            Planner</button>
-                        <button onclick="showForm('form6')" style="width: 150px; font-size: small;">Retirement Planner
-                        </button> -->
-                            <button onclick="showForm('form7')" style="width: 150px;font-size: small;">Single Goal
-                                Planner</button>
-                            <button onclick="showForm('form8')" style="width: 150px; font-size: small;">Buy a
-                                Car/Home</button>
-                            <button onclick="showForm('form9')" style="width: 150px;font-size: small;">EMI
-                                Calculator</button>
-                            <button onclick="showForm('form10')" style="width: 150px; font-size: small;">Save Tax with
-                                ELSS</button>
-
+                            <img style="width: 20px;" src="hamburger.png" alt="Menu" class="w-10 h-10 cursor-pointer"> Menu
+    
                         </div>
+                        <div id="navMenu" class="menu" style="width: 20rem; ">
+                            <a onclick="showForm('form1')">SIP Planner</a><br>
+                            <a onclick="showForm('form2')">SIP Delay Cost Calculator</a><br>
+                            <a onclick="showForm('form3')">SIP Need Calculator</a><br>
+                            <a onclick="showForm('form4')">Child Education Planner</a><br>
+                            <a onclick="showForm('form7')">Single Goal Planner</a><br>
+                            <a onclick="showForm('form8')">Buy a Car/Home</a><br>
+                            <a onclick="showForm('form9')">EMI Calculator</a><br>
+                            <a onclick="showForm('form10')">Save Tax with ELSS</a><br>
+    
+    
+                        </div>
+    
+
+                        
                     </div>
                 </nav>
                 <div style="display: flex;">
@@ -473,13 +467,13 @@
                         <div style="display: flex; gap: 1rem; margin: 1rem;">
                             <div class="img-service">
                                 <img src="img/services/icons8-money-box-24.png" alt="">
-                                <button onclick="showForm('form1')" style="width: 150px;font-size: small;"
+                                <button onclick="showForm('form1')" style="width: 175px;font-size: small;"
                                     id="my-button">SIP
                                     Planner</button>
                             </div>
                             <div class="img-service">
                                 <img src="img/services/icons8-money-50.png" alt="">
-                                <button onclick="showForm('form2')" style="width: 150px; font-size: small;"
+                                <button onclick="showForm('form2')" style="width: 175px; font-size: small;"
                                     id="my-button">SIP Delay Cost
                                     Calculator</button>
                             </div>
@@ -487,13 +481,13 @@
                         <div style="display: flex; gap: 1rem; margin: 1rem;">
                             <div class="img-service">
                                 <img src="img/services/icons8-growth-50.png" alt="">
-                                <button onclick="showForm('form3')" style="width: 150px;font-size: small;"
+                                <button onclick="showForm('form3')" style="width: 175px;font-size: small;"
                                     id="my-button">SIP Need
                                     Calculator</button>
                             </div>
                             <div class="img-service">
                                 <img src="img/services/icons8-graduation-50.png" alt="">
-                                <button onclick="showForm('form4')" style="width: 150px; font-size: small;"
+                                <button onclick="showForm('form4')" style="width: 175px; font-size: small;"
                                     id="my-button">Child Education
                                     Planner</button>
                             </div>
@@ -514,13 +508,13 @@
                         <div style="display: flex; gap: 1rem;margin: 1rem;">
                             <div class="img-service">
                                 <img src="img/services/icons8-archery-66.png" alt="">
-                                <button onclick="showForm('form7')" style="width: 150px;font-size: small;"
+                                <button onclick="showForm('form7')" style="width: 175px;font-size: small;"
                                     id="my-button">Single Goal
                                     Planner</button>
                             </div>
                             <div class="img-service">
                                 <img src="img/services/icons8-home-50.png" alt="">
-                                <button onclick="showForm('form8')" style="width: 150px; font-size: small;"
+                                <button onclick="showForm('form8')" style="width: 175px; font-size: small;"
                                     id="my-button">Buy a
                                     Car/Home</button>
                             </div>
@@ -528,13 +522,13 @@
                         <div style="display: flex; gap: 1rem;margin: 1rem;">
                             <div class="img-service">
                                 <img src="img/services/icons8-calculator-50.png" alt="">
-                                <button onclick="showForm('form9')" style="width: 150px;font-size: small;"
+                                <button onclick="showForm('form9')" style="width: 175px;font-size: small;"
                                     id="my-button">EMI
                                     Calculator</button>
                             </div>
                             <div class="img-service">
                                 <img src="img/services/icons8-percentage-50.png" alt="">
-                                <button onclick="showForm('form10')" style="width: 150px; font-size: small;"
+                                <button onclick="showForm('form10')" style="width: 175px; font-size: small;"
                                     id="my-button">Save Tax with
                                     ELSS</button>
                             </div>
