@@ -127,7 +127,7 @@
 
 /*** Navbar Start ***/
 .nav-bar {
-    background: var(--bs-white);
+    background: rgba(0, 62, 134, 0.95);
     transition: 1s;
 }
 
