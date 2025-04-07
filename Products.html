@@ -291,8 +291,8 @@
         <style>
             .flip-box {
                 background-color: transparent;
-                width: 400px;
-                height: 300px;
+                width: 300px;
+                height: 250px;
                 border: 1px solid #f1f1f1;
                 perspective: 1000px;
             }
@@ -325,8 +325,9 @@
             }
 
             .flip-box-back {
-                background-color: #555;
-                color: white;
+                
+                background-color: #81808062;
+                color:  rgb(0, 0, 0);
                 transform: rotatex(180deg);
                 display: flex;
                 align-items: center;
@@ -335,8 +336,10 @@
             }
 
             .mutualfund-pink {
+                font-weight: bold;
                 background-color: #f8615a;
                 display: flex;
+                padding: .5rem;
                 gap: .5rem;
                 flex-direction: column;
                 align-items: center;
@@ -344,6 +347,8 @@
             }
 
             .fixedincome-blue {
+                font-weight: bold;
+                padding: .5rem;
                 background-color: #5abee8;
                 display: flex;
                 gap: .5rem;
@@ -353,6 +358,8 @@
             }
 
             .Capitalmarket-yellow {
+                font-weight: bold;
+                padding: .5rem;
                 background-color: #efbd49;
                 display: flex;
                 gap: .5rem;
@@ -362,6 +369,8 @@
             }
 
             .portfolio-orange {
+                font-weight: bold;
+                padding: .5rem;
                 background-color: #ff6c23;
                 display: flex;
                 gap: .5rem;
@@ -371,6 +380,8 @@
             }
 
             .realeaste-green {
+                font-weight: bold;
+                padding: .5rem;
                 background-color: #95bb04;
                 display: flex;
                 gap: .5rem;
@@ -380,8 +391,29 @@
             }
 
             .insurance-red {
+                font-weight: bold;
+                padding: .5rem;
                 background-color: #e30a12;
-                color: white;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .insurance-yellow{
+                font-weight: bold;
+                padding: .5rem;
+                background-color: #ffdb0e;
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .health-purple{
+                font-weight: bold;
+                padding: .5rem;
+                background-color: #bc2bff;
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
@@ -391,7 +423,7 @@
 
             .contain3 {
                 display: grid;
-                grid-template-columns: auto auto auto;
+                grid-template-columns: auto auto auto auto;
                 align-items: center;
                 justify-content: center;
                 gap: 2rem;
@@ -415,7 +447,7 @@
                 font-size: xx-large;
             }
 
-            @media screen and (max-width:850px) {
+            @media screen and (max-width:950px) {
                 .contain3 {
                     display: flex;
                     flex-direction: column;
@@ -442,7 +474,7 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <div class="mutualfund-pink" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                            <div class="mutualfund-pink" style="height: 250px ; width: 300px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">MUTUAL FUNDS
                                 <img style="color: white;" src="img/products/icons8-fund-accounting-50.png" alt="">
                             </div>
@@ -459,7 +491,20 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <div class="fixedincome-blue" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                            <div class="health-purple" style="height: 250px ; width: 300px; align-items: center; display: flex;
+                    justify-content: center; font-size: x-large;">HEALTH INSURANCE
+                                <img src="img/products/icons8-health-insurance-50.png">
+                            </div>
+                        </div>
+                        <div class=" flip-box-back">
+                            <p>Health insurance provides financial protection by covering medical expenses, ensuring access to quality healthcare and reducing out-of-pocket costs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="fixedincome-blue" style="height: 250px ; width: 300px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">BONDS
                                 <img src="img/products/icons8-euro-money-50.png" alt="">
                             </div>
@@ -476,7 +521,7 @@
                 <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <div class="Capitalmarket-yellow" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                        <div class="Capitalmarket-yellow" style="height: 250px ; width: 300px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">CAPITAL GAIN BONDS.
                             <img src="img/products/icons8-growth-50.png" alt="">
                         </div>
@@ -495,7 +540,7 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <div class="portfolio-orange" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                            <div class="portfolio-orange" style="height: 250px ; width: 300px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">MARKET LINKED DEBENTURES <img
                                     src="img/products/icons8-capital-omega-50.png" alt=""></div>
                         </div>
@@ -511,7 +556,7 @@
                  <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <div class="realeaste-green" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                        <div class="realeaste-green" style="height: 250px ; width: 300px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">PORTFOLIO MANAGEMENT SERVICES
                             <img src="img/products/icons8-home-50.png">
                         </div>
@@ -527,7 +572,7 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <div class="insurance-red" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                            <div class="insurance-red" style="height: 250px ; width: 300px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">LIFE TERM INSURANCE
                                 <img src="img/products/icons8-umbrella-50.png">
                             </div>
@@ -539,33 +584,18 @@
                         </div>
                     </div>
                 </div>
+              
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <div class="insurance-red" style="height: 300px ; width: 400px; align-items: center; display: flex;
-                    justify-content: center; font-size: x-large;">HEALTH INSURANCE
-                                <img src="img/products/icons8-umbrella-50.png">
-                            </div>
-                        </div>
-                        <div class=" flip-box-back">
-                            <p>Experience quality risk advisory and management services with our insurance
-                                solutions. We offer the best of
-                                risk management advisory available in insurance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <div class="insurance-red" style="height: 300px ; width: 400px; align-items: center; display: flex;
+                            <div class="insurance-yellow" style="height: 250px ; width: 300px; align-items: center; display: flex;
                     justify-content: center; font-size: x-large;">PERSONAL ACCIDENTAL INSURANCE
-                                <img src="img/products/icons8-umbrella-50.png">
+                                <img style="height: 3rem;" src="img/products/icons8-accidental-insurance-24.png">
                             </div>
                         </div>
                         <div class=" flip-box-back">
-                            <p>Experience quality risk advisory and management services with our insurance
-                                solutions. We offer the best of
-                                risk management advisory available in insurance.</p>
+                            <p>
+                                Personal accidental insurance offers financial support for injuries or death due to accidents, covering medical costs, disability, and loss of income..</p>
                         </div>
                     </div>
                 </div>
