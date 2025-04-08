@@ -558,7 +558,7 @@
                             <label for="expectedReturn">Expected Return (in %)</label>
                             <input type="text" id="expectedReturn" name="expectedReturn">
 
-                            <button type="button">Calculate</button>
+                            <button onclick="calculateSIP()" type="button">Calculate</button>
                             <button type="reset" class="reset">Reset</button>
                             <div id="sipResult" style="margin-top: 20px; font-weight: bold; color: #002855;"></div>
                         </form>
@@ -598,8 +598,10 @@
                             </div>
 
                             <div class="buttons">
-                                <button type="button">Calculate</button>
+                                <button onclick="calculateSIPDelay()" type="button">Calculate</button>
                                 <button type="reset" class="reset">Reset</button>
+                            <div id="sipDelayResult" style="margin-top: 20px; font-weight: bold; color: #002855;"></div>
+
                             </div>
                         </form>
                     </div>
@@ -641,8 +643,10 @@
                                     placeholder="% Annualized">
                             </div>
                             <div class="buttons">
-                                <button type="button">Submit </button>
+                                <button onclick="calculateSIPNeed()" type="button">Submit </button>
                                 <button type="reset" class="reset">Reset</button>
+                            <div id="sipNeedResult" style="margin-top: 20px; font-weight: bold; color: #002855;"></div>
+
                             </div>
                         </form>
 
@@ -686,7 +690,7 @@
                                 %
                                 <span class="tooltip">Yearly</span>
                                 <br>
-                                <button type="button">Submit</button>
+                                <button onclick="calculateChildEducationPlan()" type="button">Submit </button>
                                 <button type="reset">Reset</button>
                                 <div id="childEduResult" style="margin-top: 20px; font-weight: bold; color: #002855;"></div>
                             </form>
@@ -856,8 +860,10 @@
                                 </div>
 
                                 <div class="btn-group">
-                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button onclick="calculateSingleGoal()" type="submit" class="submit-btn">Submit</button>
                                     <button type="reset" class="reset-btn">Reset</button>
+                                <div id="singleGoalResult" style="margin-top: 20px; font-weight: bold; color: #002855;"></div>
+
                                 </div>
                             </form>
                         </div>
@@ -932,8 +938,10 @@
                                 </div>
 
                                 <div class="btn-group">
-                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button onclick="calculateBuyAsset()" type="submit" class="submit-btn">Submit</button>
                                     <button type="reset" class="reset-btn">Reset</button>
+                                <div id="buyAssetResult" style="margin-top: 20px; font-weight: bold; color: #002855;"></div>
+
                                 </div>
                             </form>
                         </div>
@@ -976,12 +984,13 @@
                                 <div class="form-group">
                                     <label for="loan-duration">Duration of the Loan (Years):</label>
                                     <input type="number" id="loan-duration" placeholder="Enter years">
-                                    <span class="unit">Years</span>
+                                    <span id="emiResult" class="unit">Years</span>
                                 </div>
 
                                 <div class="btn-group">
-                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button onclick="calculateEmi()" type="submit" class="submit-btn">Submit</button>
                                     <button type="reset" class="reset-btn">Reset</button>
+
                                 </div>
                             </form>
                         </div>
@@ -1027,12 +1036,13 @@
                                 <div class="form-group">
                                     <label for="investment">Investment Planned for ELSS:</label>
                                     <input type="number" id="investment" placeholder="Enter amount">
-                                    <span class="unit">Rs.</span>
+                                    <span id="taxResult" class="unit">Rs.</span>
                                 </div>
 
                                 <div class="btn-group">
-                                    <button type="submit" class="submit-btn">Submit</button>
+                                    <button onclick="calculateTaxSavings()" type="submit" class="submit-btn">Submit</button>
                                     <button type="reset" class="reset-btn">Reset</button>
+
                                 </div>
                             </form>
                         </div>
