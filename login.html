@@ -135,7 +135,7 @@
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="Products.html" class="nav-item nav-link">Products</a>
                             <a href="services.html" class="nav-item nav-link">Services</a>
-                            <a href="Financialtool.html" class="nav-item nav-link">Financialtool</a>
+                            <a href="Financialtool.html" class="nav-item nav-link">Financial Tools</a>
                             <a href="studio.html" class="nav-item nav-link">Studio</a>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
@@ -253,167 +253,189 @@
                                 </div>
                             </form>
 
+                            <div class="col-12 text-center mt-3">
+                                <p>Existing user? <a href="https://ewa.njindiaonline.com/ewa/login" target="_blank">Sign
+                                        in here</a></p>
+                            </div>
+
                             <script>
                                 function sendMessage(event) {
                                     event.preventDefault();
 
-                                    let name = document.getElementById('name').value;
-                                    let email = document.getElementById('email').value;
-                                    let phone = document.getElementById('phone').value;
-                                    let dob = document.getElementById('dob').value;
-                                    let pan = document.getElementById('pan').value;
-                                    let message = document.getElementById('message').value;
+                                    let name = document.getElementById('name').value.trim();
+                                    let email = document.getElementById('email').value.trim();
+                                    let phone = document.getElementById('phone').value.trim();
+                                    let dob = document.getElementById('dob').value.trim();
+                                    let pan = document.getElementById('pan').value.trim();
+                                    let message = document.getElementById('message').value.trim();
 
-                                    let whatsappMessage = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ADate of Birth: ${dob}%0APAN Number: ${pan}%0AMessage: ${message}`;
+                                    // PAN Validation (simple format check)
+                                    const panRegex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+                                    if (!panRegex.test(pan)) {
+                                        alert("Please enter a valid PAN number (e.g., ABCDE1234F).");
+                                        return;
+                                    }
+
+                                    // Phone number validation (10-digit)
+                                    const phoneRegex = /^[6-9][0-9]{9}$/;
+                                    if (!phoneRegex.test(phone)) {
+                                        alert("Please enter a valid 10-digit phone number.");
+                                        return;
+                                    }
+
+                                    let whatsappMessage =
+                                        `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ADate of Birth: ${dob}%0APAN Number: ${pan}%0AMessage: ${message}`;
 
                                     let whatsappURL = `https://wa.me/8431622457?text=${whatsappMessage}`;
+
+                                    alert("Redirecting to WhatsApp to complete your message submission.");
                                     window.open(whatsappURL, '_blank');
                                 }
                             </script>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Start -->
-        <div class="container-fluid py-5 text-white" style="background-color: #0056a3;">
-            <div class="container">
-                <div class="row g-5">
 
-                    <!-- About & Social -->
-                    <div class="col-lg-4">
-                        <img src="img/grl-logo.png" alt="GRL Wealth Logo" class="mb-3" style="max-width: 180px;">
-                        <p>
-                            GRL Wealth has served over 430+ clients with smart investment solutions. We are
-                            certified
-                            distributors partnered with NJ Wealth, committed to guiding you to financial
-                            freedom.
-                        </p>
-                        <div class="d-flex mt-3">
-                            <a class="btn btn-outline-light btn-sm rounded-circle me-2"
-                                href="https://www.facebook.com/GRLwealth/" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-sm rounded-circle me-2"
-                                href="https://www.youtube.com/@grlwealth/" target="_blank"><i
-                                    class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-sm rounded-circle"
-                                href="https://www.linkedin.com/in/grl-wealth/" target="_blank"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+                    <!-- Footer Start -->
+                    <div class="container-fluid py-5 text-white" style="background-color: #0056a3;">
+                        <div class="container">
+                            <div class="row g-5">
 
-                    <!-- Useful Links -->
-                    <div class="col-lg-2">
-                        <h5 class="mb-4 text-light">Useful Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="about.html" class="text-white text-decoration-none">About Us</a>
-                            </li>
-                            <li><a href="Products.html" class="text-white text-decoration-none">Products</a>
-                            </li>
-                            <li><a href="service.html" class="text-white text-decoration-none">Services</a>
-                            </li>
-                            <li><a href="studio.html" class="text-white text-decoration-none">Studio</a>
-                            </li>
-                            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                                <!-- About & Social -->
+                                <div class="col-lg-4">
+                                    <img src="img/grl-logo.png" alt="GRL Wealth Logo" class="mb-3"
+                                        style="max-width: 180px;">
+                                    <p>
+                                        GRL Wealth has served over 430+ clients with smart investment solutions. We are
+                                        certified
+                                        distributors partnered with NJ Wealth, committed to guiding you to financial
+                                        freedom.
+                                    </p>
+                                    <div class="d-flex mt-3">
+                                        <a class="btn btn-outline-light btn-sm rounded-circle me-2"
+                                            href="https://www.facebook.com/GRLwealth/" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-outline-light btn-sm rounded-circle me-2"
+                                            href="https://www.youtube.com/@grlwealth/" target="_blank"><i
+                                                class="fab fa-youtube"></i></a>
+                                        <a class="btn btn-outline-light btn-sm rounded-circle"
+                                            href="https://www.linkedin.com/in/grl-wealth/" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
 
-                    <!-- Contact Info -->
-                    <div class="col-lg-3">
-                        <h5 class="mb-4 text-light">Contact Us</h5>
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="fas fa-map-marker-alt fa-lg me-3 mt-1"></i>
-                            <span>123 Street, New York, USA</span>
-                        </div>
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="fas fa-envelope fa-lg me-3 mt-1"></i>
-                            <a href="mailto:grlwealth@grlwealth.com"
-                                class="text-white text-decoration-underline">grlwealth@grlwealth.com</a>
-                        </div>
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-phone-alt fa-lg me-3 mt-1"></i>
-                            <a href="tel:+918431622457" class="text-white text-decoration-underline">+91
-                                84316 22457</a>
-                        </div>
-                    </div>
+                                <!-- Useful Links -->
+                                <div class="col-lg-2">
+                                    <h5 class="mb-4 text-light">Useful Links</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a>
+                                        </li>
+                                        <li><a href="Products.html" class="text-white text-decoration-none">Products</a>
+                                        </li>
+                                        <li><a href="service.html" class="text-white text-decoration-none">Services</a>
+                                        </li>
+                                        <li><a href="studio.html" class="text-white text-decoration-none">Studio</a>
+                                        </li>
+                                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                    <!-- Newsletter -->
-                    <div class="col-lg-3">
-                        <h5 class="mb-4 text-light">Newsletter</h5>
-                        <p>Get the latest market insights and updates from GRL Wealth directly to your
-                            inbox.</p>
-                        <div class="position-relative mb-3">
-                            <input type="email" class="form-control rounded-pill py-2 ps-3 pe-5"
-                                placeholder="Enter your email">
-                            <button
-                                class="btn btn-light text-primary rounded-pill position-absolute top-0 end-0 mt-1 me-1 px-3">Sign
-                                Up</button>
-                        </div>
-                        <div class="d-flex align-items-center mt-3">
-                            <a href="tel:+918431622457"
-                                class="btn btn-lg-square rounded-circle bg-light text-primary"><i
-                                    class="fa fa-phone-alt"></i></a>
-                            <div class="ms-3">
-                                <small>Call Our Experts</small><br>
-                                <strong>+91 84316 22457</strong>
+                                <!-- Contact Info -->
+                                <div class="col-lg-3">
+                                    <h5 class="mb-4 text-light">Contact Us</h5>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <i class="fas fa-map-marker-alt fa-lg me-3 mt-1"></i>
+                                        <span>123 Street, New York, USA</span>
+                                    </div>
+                                    <div class="d-flex align-items-start mb-3">
+                                        <i class="fas fa-envelope fa-lg me-3 mt-1"></i>
+                                        <a href="mailto:grlwealth@grlwealth.com"
+                                            class="text-white text-decoration-underline">grlwealth@grlwealth.com</a>
+                                    </div>
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-phone-alt fa-lg me-3 mt-1"></i>
+                                        <a href="tel:+918431622457" class="text-white text-decoration-underline">+91
+                                            84316 22457</a>
+                                    </div>
+                                </div>
+
+                                <!-- Newsletter -->
+                                <div class="col-lg-3">
+                                    <h5 class="mb-4 text-light">Newsletter</h5>
+                                    <p>Get the latest market insights and updates from GRL Wealth directly to your
+                                        inbox.</p>
+                                    <div class="position-relative mb-3">
+                                        <input type="email" class="form-control rounded-pill py-2 ps-3 pe-5"
+                                            placeholder="Enter your email">
+                                        <button
+                                            class="btn btn-light text-primary rounded-pill position-absolute top-0 end-0 mt-1 me-1 px-3">Sign
+                                            Up</button>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-3">
+                                        <a href="tel:+918431622457"
+                                            class="btn btn-lg-square rounded-circle bg-light text-primary"><i
+                                                class="fa fa-phone-alt"></i></a>
+                                        <div class="ms-3">
+                                            <small>Call Our Experts</small><br>
+                                            <strong>+91 84316 22457</strong>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
+                    <style>
+                        .btn-outline-light:hover {
+                            background-color: #ffffff !important;
+                            color: #0056a3 !important;
+                            transition: all 0.3s ease;
+                        }
+                    </style>
+                    <!-- Footer End -->
 
-                </div>
-            </div>
-        </div>
-        <style>
-            .btn-outline-light:hover {
-                background-color: #ffffff !important;
-                color: #0056a3 !important;
-                transition: all 0.3s ease;
-            }
-        </style>
-        <!-- Footer End -->
-
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4" style="background-color: #004b91;">
-            <div class="container">
-                <div class="row g-4 align-items-center justify-content-between">
-                    <div class="col-md-6 text-center text-md-end">
-                        <span class="text-white">
-                            <i class="fas fa-copyright me-2"></i>
-                            <a href="#" class="text-white text-decoration-none">GRL-Wealth</a>, All rights
-                            reserved. |
-                        </span>
+                    <!-- Copyright Start -->
+                    <div class="container-fluid copyright py-4" style="background-color: #004b91;">
+                        <div class="container">
+                            <div class="row g-4 align-items-center justify-content-between">
+                                <div class="col-md-6 text-center text-md-end">
+                                    <span class="text-white">
+                                        <i class="fas fa-copyright me-2"></i>
+                                        <a href="#" class="text-white text-decoration-none">GRL-Wealth</a>, All rights
+                                        reserved. |
+                                    </span>
+                                </div>
+                                <div class="col-md-6 text-center text-md-start">Designed by
+                                    <a class="text-white text-decoration-underline" href="https://www.aspironkhuze.com/"
+                                        target="_blank">
+                                        Aspiron Khuze Technologies Pvt Ltd
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 text-center text-md-start">Designed by
-                        <a class="text-white text-decoration-underline" href="https://www.aspironkhuze.com/"
-                            target="_blank">
-                            Aspiron Khuze Technologies Pvt Ltd
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
-        <!-- Copyright End -->
+                    <!-- Copyright End -->
+                    <!-- Copyright End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+                    <!-- Back to Top -->
+                    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i
+                            class="fa fa-arrow-up"></i></a>
 
 
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                    <!-- JavaScript Libraries -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="lib/wow/wow.min.js"></script>
+                    <script src="lib/easing/easing.min.js"></script>
+                    <script src="lib/waypoints/waypoints.min.js"></script>
+                    <script src="lib/counterup/counterup.min.js"></script>
+                    <script src="lib/lightbox/js/lightbox.min.js"></script>
+                    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+                    <!-- Template Javascript -->
+                    <script src="js/main.js"></script>
     </body>
 
 </html>
