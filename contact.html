@@ -188,6 +188,7 @@
 
 
         <!-- Contact Start -->
+
         <div class="container-fluid contact bg-light py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
@@ -205,7 +206,7 @@
                     </div>
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
                         <div>
-                            <form onsubmit="sendMessage(event)">
+                            <form id="contact-form" method="POST" class="bg-white rounded p-5">
                                 <div class="row g-3">
                                     <div class="col-lg-12 col-xl-6">
                                         <div class="form-floating">
@@ -236,28 +237,48 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
+                                        <button onclick="sendMessage(event)" class="btn btn-primary w-100 py-3">Send Message</button>
+
+                
                                     </div>
                                 </div>
                             </form>
                         </div>
+                        <!-- EmailJS SDK -->
+                        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
                         <script>
-                            function sendMessage(event) {
-                                event.preventDefault();
-
-                                let name = document.getElementById('name').value;
-                                let email = document.getElementById('email').value;
-                                let phone = document.getElementById('phone').value;
-                                let dob = document.getElementById('dob').value;
-                                let pan = document.getElementById('pan').value;
-                                let message = document.getElementById('message').value;
-
-                                let whatsappMessage = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ADate of Birth: ${dob}%0APAN Number: ${pan}%0AMessage: ${message}`;
-
-                                let whatsappURL = `https://wa.me/8431622457?text=${whatsappMessage}`;
-                                window.open(whatsappURL, '_blank');
+                            (function () {
+                                emailjs.init("HeSCMK77qCuHDTGHj"); // Your EmailJS Public Key
+                            })();
+                        </script>
+                        <!-- JavaScript Logic -->
+                        <script>
+                            function sendMessage(e) {
+                                e.preventDefault(); //  Prevent form from reloading
+                        
+                                const params = {
+                                    name: document.getElementById("name").value,
+                                    email: document.getElementById("email").value,
+                                    phone: document.getElementById("phone").value,
+                                    message: document.getElementById("message").value,
+                                    time: new Date().toLocaleString()
+                                };
+                                console.log(params);
+                        
+                                const serviceId = "service_q5s6goe"; // Your EmailJS Service ID
+                                const templateId = "template_kh00ylt"; // Your EmailJS Template ID
+                                emailjs.send(serviceId, templateId, params)
+                                    .then(function (response) {
+                                        alert("✅ Message sent successfully!");
+                                        document.getElementById("contact-form").reset();
+                                        console.log("SUCCESS!", response.status, response.text);
+                                    }, function (error) {
+                                        alert(" Failed to send message. Please check console for details.");
+                                        console.error("FAILED...", error);
+                                    });
                             }
                         </script>
+                        
                     </div>
                 </div>
             </div>
