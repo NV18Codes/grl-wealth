@@ -116,20 +116,35 @@
         .btn-primary:hover {
             background-color: #d18c00;
         }
-        
+
         #aboutmainpage {
             width: 100%;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: flex-start;
+            padding: 5rem;
             color: white;
             text-align: left;
-            padding: 5rem;
-            background-image: url(img/grllogo/Brand\ element\ 3.png);   
-            background-color: #007bff;
+
+            background: #007bff url('bg-img%20GRL.jpg') no-repeat center center;
+            background-size: cover;
+
             position: relative;
         }
+
+        @media (max-width: 768px) {
+            #aboutmainpage {
+                padding: 2rem;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #aboutmainpage .text-start {
+                text-align: center !important;
+            }
+        }
+
 
         #aboutmainpage h3 {
             font-size: 3rem;
@@ -205,14 +220,15 @@
                 </nav>
             </div>
         </div>
-<!-- nav ends  -->
+        <!-- nav ends  -->
         <div id="aboutmainpage">
             <div class="text-white text-start">
-                <h3 class="display-4 fw-italic text-white">Navigate Your <br> Financial Future</h3>
+                <h1 class="display-4 fw-italic text-white">Navigate Your <br> Financial Future</h1>
             </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
         </div>
         <!-- About Us End -->
@@ -234,13 +250,13 @@
                                 of
                                 mutual fund distributors. We use our knowledge of insurance, tax laws, and mutual fund
                                 investments to suggest options based on long-term and short-term financial needs.</p>
-                            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>We can save your money.
+                            <!-- <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>We can save your money.
                             </p>
                             <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Production or trading of
                                 goods</p>
                             <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Our life insurance is
-                                flexible</p>
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Information</a>
+                                flexible</p> -->
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="about.html">More Information</a>
                         </div>
                     </div>
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
@@ -296,52 +312,88 @@
         <!-- About End -->
 
         <!-- Service Start -->
-        <!-- products Start -->
-        <div style="  background-image: url(img/grllogo/Brand\ element\ 3.png); background-color: #007bff; padding: 2rem;" class="container py-5">
-            <div class="text-center mb-4">
-                <h3 class="display-4 fw-italic text-white">Our Products</h3>
-                <p class="display-8 fw-italic text-white">Explore a wide range of financial and insurance services tailored to your needs.
-                </p>
-            </div> <br> <br>
-            <div style="gap: 1rem;" class="row g-4 justify-content-center">
-                <div style="background-color: white; font-weight: bolder; padding: 1rem; " class="col-md-3 col-sm-6 text-center">
-                    <img class="icon-animated" src="img/products/icons8-rupee-64.png" alt="">
-                    <h5 class="mt-3">Mutual Funds</h5>
-                </div>
-                <div style="background-color: white; font-weight: bolder; padding: 1rem; " class="col-md-3 col-sm-6 text-center">
-                    <img class="icon-animated" src="img/products/icons8-health-insurance-50.png" alt="">
-                    <h5 class="mt-3">Health Insurance</h5>
-                </div>
-                <div style="background-color: white; font-weight: bolder; padding: 1rem; " class="col-md-3 col-sm-6 text-center">
-                    <img class="icon-animated" src="img/products/icons8-rupee-64.png" alt="">
-                    <h5 class="mt-3">Bonds</h5>
-                </div>
-                <div  style="background-color: white; font-weight: bolder; padding: 1rem; " class="col-md-3 col-sm-6 text-center">
-                    <img class="icon-animated" src="img/products/icons8-growth-50.png" alt="">
-                    <h5 class="mt-3">Capital Gain Bonds</h5>
-                </div>
-                <div  style="background-color: white; font-weight: bolder; padding: 1rem; " class="col-md-3 col-sm-6 text-center">
-                    <img class="icon-animated" src="img/products/icons8-capital-omega-50.png" alt="">
-                    <h5 class="mt-3">Market Linked Debentures</h5>
-                </div>
-                <div  style="background-color: white; font-weight: bolder; padding: 1rem; " class="col-md-3 col-sm-6 text-center">
-                    <img class="icon-animated" src="img/products/icons8-home-50.png" alt="">
-                    <h5 class="mt-3">Portfolio Services</h5>
-                </div>
-                <div  style="background-color: white; font-weight: bolder; padding: 1rem; " class="col-md-3 col-sm-6 text-center">
-                    <img class="icon-animated" src="img/products/icons8-umbrella-50.png" alt="">
-                    <h5 class="mt-3">Life Term Insurance</h5>
-                </div>
-                <div  style="background-color: white; font-weight: bolder; padding: 1rem; " class="col-md-3 col-sm-6 text-center">
-                    <img class="icon-animated" src="img/products/icons8-accidental-insurance-24.png"
-                        style="height: 2.5rem;" alt="">
-                    <h5 class="mt-3">Personal Accidental</h5>
-                </div>
+        <!-- Products Section -->
+        <div class="position-relative container-fluid py-5 text-white" style="background-color: #002B5B;">
+            <!-- White Image Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="
+        background: rgba(255, 255, 255, 0.1);
+        background-image: url('img/grllogo/Brand%20element%203.png');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2;
+        z-index: 1;">
             </div>
-            <div class="text-center mt-4">
-                <a href="products.html" class="btn btn-primary rounded-pill px-4 py-2">View All Products</a>
+
+            <!-- Section Header -->
+            <div class="position-relative container text-center mb-5" style="z-index: 2;">
+                <h3 class="display-4 fw-italic text-white">Our Products</h3>
+                <p class="fs-5 fst-italic">Explore a wide range of financial and insurance services tailored to your
+                    needs.</p>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="position-relative container">
+                <div class="row g-4 justify-content-center" style="z-index: 2; position: relative;">
+                    <!-- Product Items -->
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="bg-white p-4 h-100 shadow-sm rounded">
+                            <img class="icon-animated" src="img/products/icons8-rupee-64.png" alt="">
+                            <h5 class="mt-3 fw-bold">Mutual Funds</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="bg-white p-4 h-100 shadow-sm rounded">
+                            <img class="icon-animated" src="img/products/icons8-health-insurance-50.png" alt="">
+                            <h5 class="mt-3 fw-bold">Health Insurance</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="bg-white p-4 h-100 shadow-sm rounded">
+                            <img class="icon-animated" src="img/products/icons8-rupee-64.png" alt="">
+                            <h5 class="mt-3 fw-bold">Bonds</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="bg-white p-4 h-100 shadow-sm rounded">
+                            <img class="icon-animated" src="img/products/icons8-growth-50.png" alt="">
+                            <h5 class="mt-3 fw-bold">Capital Gain Bonds</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="bg-white p-4 h-100 shadow-sm rounded">
+                            <img class="icon-animated" src="img/products/icons8-capital-omega-50.png" alt="">
+                            <h5 class="mt-3 fw-bold">Market Linked Debentures</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="bg-white p-4 h-100 shadow-sm rounded">
+                            <img class="icon-animated" src="img/products/icons8-home-50.png" alt="">
+                            <h5 class="mt-3 fw-bold">Portfolio Services</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="bg-white p-4 h-100 shadow-sm rounded">
+                            <img class="icon-animated" src="img/products/icons8-umbrella-50.png" alt="">
+                            <h5 class="mt-3 fw-bold">Life Term Insurance</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <div class="bg-white p-4 h-100 shadow-sm rounded">
+                            <img class="icon-animated" src="img/products/icons8-accidental-insurance-24.png"
+                                style="height: 2.5rem;" alt="">
+                            <h5 class="mt-3 fw-bold">Personal Accidental</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Button -->
+                <div class="text-center mt-5">
+                    <a href="products.html" class="btn btn-primary rounded-pill px-4 py-2">View All Products</a>
+                </div>
             </div>
         </div>
+
+        <!-- Icon Hover Style -->
         <style>
             .icon-animated {
                 transition: transform 0.3s ease, filter 0.3s ease;
@@ -352,8 +404,10 @@
                 filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
             }
         </style>
+
+        <!-- jQuery (Required for some Bootstrap components) -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Service End -->
+
         <hr>
         <!-- Services Start -->
         <div class="container-fluid bg-light py-5">
@@ -422,117 +476,168 @@
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <a href="Financialtool.html" class="btn btn-primary rounded-pill px-4 py-2">Knoe More Financial Tools</a>
+                    <a href="Financialtool.html" class="btn btn-primary rounded-pill px-4 py-2">Know More Financial
+                        Tools</a>
                 </div>
             </div>
         </div>
         <!-- Services End -->
         <hr>
         <!-- FAQs Start -->
-        <div class="container-fluid faq-section bg-white pb-5" style="background-image: url(img/grllogo/Brand\ element\ 1.png);">
-            <div class="container pb-5">
+
+        <!-- FAQ Section Start -->
+        <div class="container-fluid faq-section position-relative py-5"
+            style="background-color: #002B5B; overflow: hidden;">
+            <!-- Decorative background image overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="
+        background: rgba(255, 255, 255, 0.05);
+        background-image: url('img/grllogo/Brand%20element%203.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        z-index: 0;">
+            </div>
+
+            <!-- FAQ Content -->
+            <div class="container position-relative" style="z-index: 2;">
                 <div class="row g-5 align-items-center">
+                    <!-- FAQ Text + Accordion -->
                     <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="h-100">
-                            <div class="mb-5">
+                        <div class="text-white">
+                            <div class="mb-4">
                                 <h4 class="text-primary">FAQs</h4>
-                                <h1 class="display-4 mb-0">Your Investment Questions Answered</h1>
+                                <h1 class="display-5 fw-bold text-white">Your Investment Questions Answered</h1>
                             </div>
                             <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
+                                <!-- FAQ 1 -->
+                                <div class="accordion-item border-0 rounded mb-2">
                                     <h2 class="accordion-header" id="faqOne">
-                                        <button class="accordion-button border-0" type="button"
+                                        <button class="accordion-button bg-white text-dark fw-semibold" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
-                                            Q: Why should I invest in Mutual Funds?
+                                            Why should I invest in Mutual Funds?
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show"
                                         aria-labelledby="faqOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body rounded">
-                                            A: Mutual Funds offer professional management, diversification, and
-                                            potential for long-term wealth creation. They’re suitable for both new and
-                                            seasoned investors.
+                                        <div class="accordion-body bg-light text-dark rounded">
+                                            Mutual Funds offer professional management, diversification, and potential
+                                            for
+                                            long-term wealth creation. They’re suitable for both new and seasoned
+                                            investors.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+
+                                <!-- FAQ 2 -->
+                                <div class="accordion-item border-0 rounded mb-2">
                                     <h2 class="accordion-header" id="faqTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        <button class="accordion-button collapsed bg-white text-dark fw-semibold"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            Q: How do I define my financial goals?
+                                            How do I define my financial goals?
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
                                         data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Start by identifying your basic needs (like retirement, children’s
-                                            education) and aspirations (like a foreign trip, luxury home). At GRL
-                                            Wealth, we help you map and prioritize them.
+                                        <div class="accordion-body bg-light text-dark rounded">
+                                            Start by identifying your basic needs (like retirement, children’s
+                                            education) and
+                                            aspirations (like a foreign trip, luxury home). At GRL Wealth, we help you
+                                            map and
+                                            prioritize them.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+
+                                <!-- FAQ 3 -->
+                                <div class="accordion-item border-0 rounded mb-2">
                                     <h2 class="accordion-header" id="faqThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        <button class="accordion-button collapsed bg-white text-dark fw-semibold"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                             aria-expanded="false" aria-controls="collapseThree">
-                                            Q: Can I track my investments regularly?
+                                            Can I track my investments regularly?
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="faqThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Absolutely! Our systems offer seamless execution and real-time tracking.
-                                            We also provide regular updates and portfolio reviews.
+                                        <div class="accordion-body bg-light text-dark rounded">
+                                            Absolutely! Our systems offer seamless execution and real-time tracking. We
+                                            also
+                                            provide regular updates and portfolio reviews.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+
+                                <!-- FAQ 4 -->
+                                <div class="accordion-item border-0 rounded mb-2">
                                     <h2 class="accordion-header" id="faqFour">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        <button class="accordion-button collapsed bg-white text-dark fw-semibold"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                             aria-expanded="false" aria-controls="collapseFour">
-                                            Q: What if the market is volatile?
+                                            What if the market is volatile?
                                         </button>
                                     </h2>
                                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
                                         data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Investment psychology plays a crucial role. We help clients stay
-                                            disciplined and focused on long-term goals, avoiding panic-driven decisions.
+                                        <div class="accordion-body bg-light text-dark rounded">
+                                            Investment psychology plays a crucial role. We help clients stay disciplined
+                                            and
+                                            focused on long-term goals, avoiding panic-driven decisions.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+
+                                <!-- FAQ 5 -->
+                                <div class="accordion-item border-0 rounded mb-2">
                                     <h2 class="accordion-header" id="faqFive">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        <button class="accordion-button collapsed bg-white text-dark fw-semibold"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                             aria-expanded="false" aria-controls="collapseFive">
-                                            Q: Do you offer insurance and other financial products?
+                                            Do you offer insurance and other financial products?
                                         </button>
                                     </h2>
                                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
                                         data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Yes, our product basket includes Mutual Funds, Capital Gain Bonds, Market
-                                            Linked Debentures, Life & Health Insurance, and more. We are your one-stop
-                                            financial partner.
+                                        <div class="accordion-body bg-light text-dark rounded">
+                                            Yes, our product basket includes Mutual Funds, Capital Gain Bonds, Market
+                                            Linked
+                                            Debentures, Life & Health Insurance, and more. We are your one-stop
+                                            financial
+                                            partner.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <style>
+                        .accordion-button {
+                            border-radius: 0.375rem !important;
+                            box-shadow: none;
+                            transition: all 0.2s ease-in-out;
+                        }
+
+                        .accordion-button:not(.collapsed) {
+                            color: #002B5B;
+                            background-color: #e8f0ff;
+                        }
+
+                        .accordion-body {
+                            font-size: 0.95rem;
+                            line-height: 1.6;
+                        }
+                    </style>
+                    <!-- Right Side Image -->
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <img src="img/carousel-2.png" class="img-fluid w-100" alt="FAQ illustration">
+                        <img src="img/carousel-2.png" class="img-fluid rounded shadow" alt="FAQ Illustration">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- FAQs End -->
-        <hr>
+        <!-- FAQ Section End -->
+
         <!-- Blog Start -->
         <style>
             .blog-item {
@@ -600,7 +705,8 @@
                                 <h5><a href="https://mkt.njwebnest.in/newsletter/November-2024.php?pcode=0ce2ff0c675a6652bd19d01ac0bc8d37"
                                         target="_blank" class="text-decoration-none text-dark">Smart Investing for
                                         Festive Season</a></h5>
-                                <p class="mb-3 text-secondary">Explore top investment opportunities and tax-saving tips
+                                <p class="mb-3 text-secondary">Explore top investment opportunities and tax-saving
+                                    tips
                                     for year-end financial planning.</p>
                                 <a href="https://mkt.njwebnest.in/newsletter/November-2024.php?pcode=0ce2ff0c675a6652bd19d01ac0bc8d37"
                                     target="_blank" class="text-primary text-decoration-none">Read More <i
@@ -623,7 +729,8 @@
                                 <h5><a href="https://mkt.njwebnest.in/newsletter/December-2024.php?pcode=0ce2ff0c675a6652bd19d01ac0bc8d37"
                                         target="_blank" class="text-decoration-none text-dark">Closing the Year
                                         Strong</a></h5>
-                                <p class="mb-3 text-secondary">A look at year-end strategies to rebalance your portfolio
+                                <p class="mb-3 text-secondary">A look at year-end strategies to rebalance your
+                                    portfolio
                                     and plan tax savings effectively.</p>
                                 <a href="https://mkt.njwebnest.in/newsletter/December-2024.php?pcode=0ce2ff0c675a6652bd19d01ac0bc8d37"
                                     target="_blank" class="text-primary text-decoration-none">Read More <i
@@ -644,7 +751,8 @@
                                 <div class="text-muted small mb-2"><i
                                         class="fa fa-calendar text-primary me-2"></i>January 2025</div>
                                 <h5><a href="https://mkt.njwebnest.in/newsletter/January-2025.php?pcode=0ce2ff0c675a6652bd19d01ac0bc8d37"
-                                        target="_blank" class="text-decoration-none text-dark">New Year, New Financial
+                                        target="_blank" class="text-decoration-none text-dark">New Year, New
+                                        Financial
                                         Resolutions</a></h5>
                                 <p class="mb-3 text-secondary">Kickstart your 2025 with actionable investment
                                     resolutions and wealth-building plans.</p>
@@ -690,9 +798,11 @@
                                 <div class="text-muted small mb-2"><i class="fa fa-calendar text-primary me-2"></i>March
                                     2025</div>
                                 <h5><a href="https://mkt.njwebnest.in/newsletter/March-2025.php?pcode=0ce2ff0c675a6652bd19d01ac0bc8d37"
-                                        target="_blank" class="text-decoration-none text-dark">Last-Minute Tax Tips</a>
+                                        target="_blank" class="text-decoration-none text-dark">Last-Minute Tax
+                                        Tips</a>
                                 </h5>
-                                <p class="mb-3 text-secondary">Get last-minute ELSS ideas, deductions, and planning tips
+                                <p class="mb-3 text-secondary">Get last-minute ELSS ideas, deductions, and planning
+                                    tips
                                     before the tax deadline hits.</p>
                                 <a href="https://mkt.njwebnest.in/newsletter/March-2025.php?pcode=0ce2ff0c675a6652bd19d01ac0bc8d37"
                                     target="_blank" class="text-primary text-decoration-none">Read More <i
@@ -707,174 +817,18 @@
         </div>
         <!-- Blog Section End -->
 
-
-
-        <!-- Team Start -->
-        <div class="container-fluid team pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Founders</h4>
-                    <h1 class="display-4 mb-4">Meet the pillars of GRL</h1>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <!-- Team Member 1 -->
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item">
-                            <div class="team-img position-relative">
-                                <img src="https://up.yimg.com/ib/th?id=OIP.4j4jNaPU3bIzDJHBj6HDSwHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
-                                    class="img-fluid rounded-top w-100" alt="John Doe">
-                                <div class="team-icon position-absolute start-50 translate-middle-x mt-3">
-                                    <a class="btn btn-primary btn-sm-square rounded-pill me-2" href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-pill me-2" href="#"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-pill me-2" href="#"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-pill" href="#"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-title p-4 text-center">
-                                <h4 class="mb-0">Name</h4>
-                                <p class="mb-0">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Team Member 2 -->
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item">
-                            <div class="team-img position-relative">
-                                <img src="https://up.yimg.com/ib/th?id=OIP.4j4jNaPU3bIzDJHBj6HDSwHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
-                                    class="img-fluid rounded-top w-100" alt="Jane Smith">
-                                <div class="team-icon position-absolute start-50 translate-middle-x mt-3">
-                                    <a class="btn btn-primary btn-sm-square rounded-pill me-2" href="#"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-pill me-2" href="#"><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-pill me-2" href="#"><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-primary btn-sm-square rounded-pill" href="#"><i
-                                            class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-title p-4 text-center">
-                                <h4 class="mb-0">Name</h4>
-                                <p class="mb-0">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-
-        <!-- Testimonial Start -->
-        <!-- <div class="container-fluid testimonial pb-5">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Testimonial</h4>
-                    <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis
-                        cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt
-                        sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0">
-                            <div class="col-4  col-lg-4 col-xl-3">
-                                <div class="h-100">
-                                    <img src="https://up.yimg.com/ib/th?id=OIP.4j4jNaPU3bIzDJHBj6HDSwHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
-                                        class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-8 col-lg-8 col-xl-9">
-                                <div class="d-flex flex-column my-auto text-start p-4">
-                                    <h4 class="text-dark mb-0">Client Name</h4>
-                                    <p class="mb-3">Profession</p>
-                                    <div class="d-flex text-primary mb-3">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error
-                                        molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0">
-                            <div class="col-4  col-lg-4 col-xl-3">
-                                <div class="h-100">
-                                    <img src="https://up.yimg.com/ib/th?id=OIP.4j4jNaPU3bIzDJHBj6HDSwHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
-                                        class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-8 col-lg-8 col-xl-9">
-                                <div class="d-flex flex-column my-auto text-start p-4">
-                                    <h4 class="text-dark mb-0">Client Name</h4>
-                                    <p class="mb-3">Profession</p>
-                                    <div class="d-flex text-primary mb-3">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star text-body"></i>
-                                    </div>
-                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error
-                                        molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0">
-                            <div class="col-4  col-lg-4 col-xl-3">
-                                <div class="h-100">
-                                    <img src="https://up.yimg.com/ib/th?id=OIP.4j4jNaPU3bIzDJHBj6HDSwHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
-                                        class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-8 col-lg-8 col-xl-9">
-                                <div class="d-flex flex-column my-auto text-start p-4">
-                                    <h4 class="text-dark mb-0">Client Name</h4>
-                                    <p class="mb-3">Profession</p>
-                                    <div class="d-flex text-primary mb-3">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star text-body"></i>
-                                        <i class="fas fa-star text-body"></i>
-                                    </div>
-                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error
-                                        molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Testimonial End -->
-
-
         <!-- Footer Start -->
-        <div class="container-fluid py-5 text-white" style="background-color: #0056a3;">
+        <div class="container-fluid py-5 text-white" style="background-color: #002B5B;">
             <div class="container">
                 <div class="row g-5">
 
                     <!-- About & Social -->
                     <div class="col-lg-4">
-                        <img src="img/grl-logo.png" alt="GRL Wealth Logo" class="mb-3" style="max-width: 180px;">
+                        <a href="index.html"> <img src="img\grllogo\GRL Wealth Logo_White.png" alt="GRL Wealth Logo"
+                                class="mb-3" style="max-width: 180px;"></a>
                         <p>
-                            GRL Wealth has served over 430+ clients with smart investment solutions. We are certified
+                            GRL Wealth has served over 430+ clients with smart investment solutions. We are
+                            certified
                             distributors partnered with NJ Wealth, committed to guiding you to financial freedom.
                         </p>
                         <div class="d-flex mt-3">
@@ -892,7 +846,7 @@
 
                     <!-- Useful Links -->
                     <div class="col-lg-2">
-                        <h5 class="mb-4 text-light">Useful Links</h5>
+                        <h5 class="mb-4 text-light text-uppercase">Useful Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
                             <li><a href="Products.html" class="text-white text-decoration-none">Products</a></li>
@@ -904,7 +858,7 @@
 
                     <!-- Contact Info -->
                     <div class="col-lg-3">
-                        <h5 class="mb-4 text-light">Contact Us</h5>
+                        <h5 class="mb-4 text-light text-uppercase">Contact Us</h5>
                         <div class="d-flex align-items-start mb-3">
                             <i class="fas fa-map-marker-alt fa-lg me-3 mt-1"></i>
                             <span>123 Street, New York, USA</span>
@@ -916,13 +870,14 @@
                         </div>
                         <div class="d-flex align-items-start">
                             <i class="fas fa-phone-alt fa-lg me-3 mt-1"></i>
-                            <a href="tel:+918431622457" class="text-white text-decoration-underline">+91 84316 22457</a>
+                            <a href="tel:+918431622457" class="text-white text-decoration-underline">+91 84316
+                                22457</a>
                         </div>
                     </div>
 
                     <!-- Newsletter -->
                     <div class="col-lg-3">
-                        <h5 class="mb-4 text-light">Newsletter</h5>
+                        <h5 class="mb-4 text-light text-uppercase">Newsletter</h5>
                         <p>Get the latest market insights and updates from GRL Wealth directly to your inbox.</p>
                         <div class="position-relative mb-3">
                             <input type="email" class="form-control rounded-pill py-2 ps-3 pe-5"
@@ -963,7 +918,8 @@
                     <div class="col-md-6 text-center text-md-end">
                         <span class="text-white">
                             <i class="fas fa-copyright me-2"></i>
-                            <a href="#" class="text-white text-decoration-none">GRL-Wealth</a>, All rights reserved. |
+                            <a href="#" class="text-white text-decoration-none">GRL-Wealth</a>, All rights reserved.
+                            |
                         </span>
                     </div>
                     <div class="col-md-6 text-center text-md-start">Designed by
