@@ -36,7 +36,63 @@
 </head>
 
 <body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        .nav-bar {
+            background-color: #002B5B;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #F0A500;
+        }
+
+        .btn-primary {
+            background-color: #F0A500;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #d18c00;
+        }
+    </style>
+    <div class="container-fluid nav-bar px-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="grl-logo-bg.png" alt="Logo" style="height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="Products.html" class="nav-item nav-link">Products</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="Financialtool.html" class="nav-item nav-link">Financial Tools</a>
+                        <a href="studio.html" class="nav-item nav-link">Studio</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="nav-btn px-3">
+                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active">Search</a>
+                        <a href="login.html"
+                            class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -88,66 +144,7 @@
     </div> -->
     <!-- Topbar End -->
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .nav-bar {
-            background-color: #002B5B;
-        }
-
-        .navbar-nav .nav-link {
-            color: white;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #F0A500;
-        }
-
-        .btn-primary {
-            background-color: #F0A500;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #d18c00;
-        }
-    </style>
-    </head>
-
-    <body>
-        <div class="container-fluid nav-bar px-0">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a href="index.html" class="navbar-brand p-0">
-                        <img src="grl-logo-bg.png" alt="Logo" style="height: 50px;">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto">
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="Products.html" class="nav-item nav-link">Products</a>
-                            <a href="services.html" class="nav-item nav-link">Services</a>
-                            <a href="Financialtool.html" class="nav-item nav-link">Financial Tools</a>
-                            <a href="studio.html" class="nav-item nav-link">Studio</a>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <div class="nav-btn px-3">
-                            <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active">Search</a>
-                            <a href="login.html"
-                                class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
+ 
         <!-- Modal Search Start -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
@@ -210,10 +207,10 @@
 
             }
         </style>
-        <DIV>
+        <div>
             <img id="main-img" src="roadmap-about2.png" alt="Roadmap"
                 class="w-100  rounded-lg shadow-lg object-cover" />
-        </DIV>
+        </div>
         <!-- About Start -->
         <!-- About Section -->
         <div class="container-fluid bg-light about py-5">
@@ -279,7 +276,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="counter-item bg-light rounded p-3 h-100 text-center">
-                                        <div class="counter-counting">
+                                         <div class="counter-counting">
                                             <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">500</span>
                                             <span class="h1 fw-bold text-primary">+</span>
                                         </div>
@@ -335,7 +332,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="team-item shadow rounded-3 overflow-hidden h-100 bg-white">
                             <div class="team-img position-relative">
-                                <img src="https://up.yimg.com/ib/th?id=OIP.4j4jNaPU3bIzDJHBj6HDSwHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                                <img src="img/founder1.jpg"
                                     class="img-fluid w-100" alt="Ramesh Reddy Gajjala"
                                     style="object-fit: cover; height: 300px;">
                             </div>
@@ -350,7 +347,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="team-item shadow rounded-3 overflow-hidden h-100 bg-white">
                             <div class="team-img position-relative">
-                                <img src="https://up.yimg.com/ib/th?id=OIP.4j4jNaPU3bIzDJHBj6HDSwHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+                                <img src="img/founder2.jpg"
                                     class="img-fluid w-100" alt="Radhika Gajjala"
                                     style="object-fit: cover; height: 300px;">
                             </div>
