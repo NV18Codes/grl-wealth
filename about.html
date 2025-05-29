@@ -8,9 +8,6 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/grl-logo.png">
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +34,7 @@
 
 <body>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+      
 
         .nav-bar {
             background-color: #002B5B;
@@ -64,15 +58,89 @@
         .btn-primary:hover {
             background-color: #d18c00;
         }
+
+        #aboutmainpage {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 5rem;
+            color: white;
+            text-align: left;
+
+            background: #007bff url('bg-img%20GRL.jpg') no-repeat center center;
+            background-size: cover;
+
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            #aboutmainpage {
+                padding: 2rem;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #aboutmainpage .text-start {
+                text-align: center !important;
+            }
+        }
+
+
+        #aboutmainpage h3 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        @media (max-width: 1024px) {
+            #aboutmainpage {
+                padding: 3rem;
+                height: 80vh;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #aboutmainpage h3 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #aboutmainpage {
+                padding: 2rem;
+                height: 70vh;
+            }
+
+            #aboutmainpage h3 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #aboutmainpage {
+                padding: 1rem;
+                height: 60vh;
+                text-align: center;
+                justify-content: center;
+            }
+
+            #aboutmainpage h3 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
+
+
+    <!-- nav start  -->
     <div class="container-fluid nav-bar px-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="index.html" class="navbar-brand p-0">
                     <img src="grl-logo-bg.png" alt="Logo" style="height: 50px;">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -85,116 +153,17 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="nav-btn px-3">
-                        <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active">Search</a>
+                        <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active">Search</a> -->
                         <a href="login.html"
-                            class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login</a>
+                            class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login/SignUp</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+    <!-- nav ends  -->
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
-        <div class="container">
-            <div class="row gx-0 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <div class="border-end border-primary pe-3">
-                            <a href="#" class="text-muted small"><i
-                                    class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                        </div>
-                        <div class="ps-3">
-                            <a href="mailto:example@gmail.com" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>example@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-flex justify-content-end">
-                        <div class="d-flex border-end border-primary pe-3">
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="dropdown ms-3">
-                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i
-                                        class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
-                            <div class="dropdown-menu rounded">
-                                <a href="#" class="dropdown-item">English</a>
-                                <a href="#" class="dropdown-item">Bangla</a>
-                                <a href="#" class="dropdown-item">French</a>
-                                <a href="#" class="dropdown-item">Spanish</a>
-                                <a href="#" class="dropdown-item">Arabic</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
-
- 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center bg-primary">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords"
-                                aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
-                                    class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End -->
-
-
-
-
-        <!-- Header Start -->
-        <!-- <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
-                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">About</li>
-                </ol>
-            </div>
-        </div> -->
-        <!-- Header End -->
-
-        <!-- <div class="header-carousel owl-carousel">
-            <div class="header-carousel-item bg-primary">
-                <div class="carousel-caption flex items-center justify-center h-full">
-                    <section class="bg-[#0759b3] w-full py-12 px-4">
-                        <div class="container mx-auto flex justify-center">
-                            <img src="roadmap-about.png" alt="Roadmap"
-                                class="w-full max-w-3xl rounded-lg shadow-lg object-cover" />
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <hr> -->
+     <section>
         <style>
             #main-img {
                 height: 87vh;
@@ -211,11 +180,13 @@
             <img id="main-img" src="roadmap-about2.png" alt="Roadmap"
                 class="w-100  rounded-lg shadow-lg object-cover" />
         </div>
-        <!-- About Start -->
-        <!-- About Section -->
-        <div class="container-fluid bg-light about py-5">
-            <!-- Decorative background image overlay -->
-            <div class="position-absolute top-0 start-0 w-100 h-100" style="
+
+    </section> 
+
+    <!-- About Section -->
+    <div class="container-fluid bg-light about py-5">
+        <!-- Decorative background image overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="
              background: rgba(255, 255, 255, 0.05);
              background-image: url('img/grllogo/Brand%20element%203.png');
              background-size: contain;
@@ -223,299 +194,297 @@
              background-repeat: no-repeat;
              opacity: 0.1;
              z-index: 0;">
-            </div>
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="about-item-content bg-white rounded p-5 h-100">
-                            <h4 class="text-primary">About Our Company</h4>
-                            <h1 class="display-5 mb-4">High Range of Exploring Protection</h1>
-                            <p>We are incorporated in the year 2016 and at present have 430+ satisfied clients. We are
-                                committed to helping our clients fulfil their financial needs with effective and smart
-                                investment assessment. We partnered with NJ Wealth, a B2B platform, to serve our
-                                clients. We are certified Mutual Fund and Insurance distributors recognised by NSE
-                                (National Stock Exchange) and AMFI (Association of Mutual Funds of India).</p>
-                            <p>We offer comprehensive financial services, having a highly qualified and experienced team
-                                of
-                                mutual fund distributors. We use our knowledge of insurance, tax laws, and mutual fund
-                                investments to suggest options based on long-term and short-term financial needs.</p>
-                            <!-- <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>We can save your money.
+        </div>
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-item-content bg-white rounded p-5 h-100">
+                        <h4 class="text-primary">About Our Company</h4>
+                        <h1 class="display-5 mb-4">High Range of Exploring Protection</h1>
+                        <p>We are incorporated in the year 2016 and at present have 430+ satisfied clients. We are
+                            committed to helping our clients fulfil their financial needs with effective and smart
+                            investment assessment. We partnered with NJ Wealth, a B2B platform, to serve our
+                            clients. We are certified Mutual Fund and Insurance distributors recognised by NSE
+                            (National Stock Exchange) and AMFI (Association of Mutual Funds of India).</p>
+                        <p>We offer comprehensive financial services, having a highly qualified and experienced team
+                            of
+                            mutual fund distributors. We use our knowledge of insurance, tax laws, and mutual fund
+                            investments to suggest options based on long-term and short-term financial needs.</p>
+                        <!-- <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>We can save your money.
                             </p>
                             <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Production or trading of
                                 goods</p>
                             <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Our life insurance is
                                 flexible</p> -->
-                            <!-- <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Information</a> -->
-                        </div>
-                    </div>
-                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="bg-white rounded p-5 h-100">
-                            <div class="row g-4 justify-content-center">
-                                <div class="col-12">
-                                    <div class="rounded bg-light">
-                                        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-10/14/full/1665747708-5376.jpg?im=FeatureCrop,size=(826,465)" class="img-fluid rounded w-100" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="counter-item bg-light rounded p-3 h-100 text-center">
-                                        <div class="counter-counting">
-                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">430</span>
-                                            <span class="h1 fw-bold text-primary">+</span>
-                                        </div>
-                                        <h5 class="mb-0 text-dark">Clients</h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="counter-item bg-light rounded p-3 h-100 text-center">
-                                        <div class="counter-counting">
-                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">30</span>
-                                            <span class="h1 fw-bold text-primary">+</span>
-                                        </div>
-                                        <h5 class="mb-0 text-dark">Awards Won</h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="counter-item bg-light rounded p-3 h-100 text-center">
-                                         <div class="counter-counting">
-                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">500</span>
-                                            <span class="h1 fw-bold text-primary">+</span>
-                                        </div>
-                                        <h5 class="mb-0 text-dark">Lacs AUM</h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="counter-item bg-light rounded p-3 h-100 text-center">
-                                        <div class="counter-counting">
-                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">8</span>
-                                            <span class="h1 fw-bold text-primary">+</span>
-                                        </div>
-                                        <h5 class="mb-0 text-dark">Years of Experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Information</a> -->
                     </div>
                 </div>
-
-                <!-- Vision & Mission Section -->
-                <div class="row mt-5">
-                    <div class="col-12 bg-white rounded p-5 shadow-sm">
-                        <!-- <h4 class="text-primary">Our Values</h4><br> -->
-                        <h2 class="text-primary mb-3"><i class="fa fa-eye me-2"></i>Vision</h2>
-                        <p class="mb-4">To help <strong>1000 families</strong> achieve Financial Independence, enabling
-                            them to contribute with <strong>100% efficiency</strong> towards building a better tomorrow.
-                        </p>
-
-                        <h2 class="text-primary mb-3"><i class="fa fa-bullseye me-2"></i>Mission</h2>
-                        <p class="mb-4">To provide <strong>personalized, transparent, and ethical</strong> mutual fund
-                            distribution services, guiding our clients towards <strong>financial security and
-                                prosperity</strong> through tailored investment solutions and continuous support.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- About End -->
-
-
-        <!-- Team Start -->
-        <div class="container-fluid team py-5" style="background-color: #f9f9f9;">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary text-uppercase fw-bold">Our Founders</h4>
-                    <h1 class="display-5 fw-semibold">Meet the Pillars of GRL</h1>
-                </div>
-
-                <div class="row g-4 justify-content-center">
-                    <!-- Founder 1 -->
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item shadow rounded-3 overflow-hidden h-100 bg-white">
-                            <div class="team-img position-relative">
-                                <img src="img/founder1.jpg"
-                                    class="img-fluid w-100" alt="Ramesh Reddy Gajjala"
-                                    style="object-fit: cover; height: 300px;">
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="bg-white rounded p-5 h-100">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-12">
+                                <div class="rounded bg-light">
+                                    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-10/14/full/1665747708-5376.jpg?im=FeatureCrop,size=(826,465)"
+                                        class="img-fluid rounded w-100" alt="">
+                                </div>
                             </div>
-                            <div class="p-4 text-center">
-                                <h5 class="mb-1">Ramesh Reddy Gajjala</h5>
-                                <p class="text-muted small">Founder & Visionary</p>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100 text-center">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">430</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h5 class="mb-0 text-dark">Clients</h5>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Founder 2 -->
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item shadow rounded-3 overflow-hidden h-100 bg-white">
-                            <div class="team-img position-relative">
-                                <img src="img/founder2.jpg"
-                                    class="img-fluid w-100" alt="Radhika Gajjala"
-                                    style="object-fit: cover; height: 300px;">
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100 text-center">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">30</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h5 class="mb-0 text-dark">Awards Won</h5>
+                                </div>
                             </div>
-                            <div class="p-4 text-center">
-                                <h5 class="mb-1">Radhika Gajjala</h5>
-                                <p class="text-muted small">Co-Founder & Strategist</p>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100 text-center">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">500</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h5 class="mb-0 text-dark">Lacs AUM</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="counter-item bg-light rounded p-3 h-100 text-center">
+                                    <div class="counter-counting">
+                                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">8</span>
+                                        <span class="h1 fw-bold text-primary">+</span>
+                                    </div>
+                                    <h5 class="mb-0 text-dark">Years of Experience</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Team End -->
 
-        <!-- Optional styling -->
-        <style>
-            .team-item {
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
+            <!-- Vision & Mission Section -->
+            <div class="row mt-5">
+                <div class="col-12 bg-white rounded p-5 shadow-sm">
+                    <!-- <h4 class="text-primary">Our Values</h4><br> -->
+                    <h2 class="text-primary mb-3"><i class="fa fa-eye me-2"></i>Vision</h2>
+                    <p class="mb-4">To help <strong>1000 families</strong> achieve Financial Independence, enabling
+                        them to contribute with <strong>100% efficiency</strong> towards building a better tomorrow.
+                    </p>
 
-            .team-item:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            }
-
-            .team-img img {
-                transition: transform 0.3s ease;
-            }
-
-            .team-img:hover img {
-                transform: scale(1.05);
-            }
-        </style>
-
-        <!-- Team End -->
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid py-5 text-white" style="background-color: #002B5B;">
-            <div class="container">
-                <div class="row g-5">
-
-                    <!-- About & Social -->
-                    <div class="col-lg-4">
-                        <a href="index.html"> <img src="img\grllogo\GRL Wealth Logo_White.png" alt="GRL Wealth Logo"
-                                class="mb-3" style="max-width: 180px;"></a>
-                        <p>
-                            GRL Wealth has served over 430+ clients with smart investment solutions. We are certified
-                            distributors partnered with NJ Wealth, committed to guiding you to financial freedom.
-                        </p>
-                        <div class="d-flex mt-3">
-                            <a class="btn btn-outline-light btn-sm rounded-circle me-2"
-                                href="https://www.facebook.com/GRLwealth/" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-sm rounded-circle me-2"
-                                href="https://www.youtube.com/@grlwealth/" target="_blank"><i
-                                    class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-sm rounded-circle"
-                                href="https://www.linkedin.com/in/grl-wealth/" target="_blank"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Useful Links -->
-                    <div class="col-lg-2">
-                        <h5 class="mb-4 text-light text-uppercase">Useful Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
-                            <li><a href="Products.html" class="text-white text-decoration-none">Products</a></li>
-                            <li><a href="service.html" class="text-white text-decoration-none">Services</a></li>
-                            <li><a href="studio.html" class="text-white text-decoration-none">Studio</a></li>
-                            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Contact Info -->
-                    <div class="col-lg-3">
-                        <h5 class="mb-4 text-light text-uppercase">Contact Us</h5>
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="fas fa-map-marker-alt fa-lg me-3 mt-1"></i>
-                            <span>123 Street, New York, USA</span>
-                        </div>
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="fas fa-envelope fa-lg me-3 mt-1"></i>
-                            <a href="mailto:grlwealth@grlwealth.com"
-                                class="text-white text-decoration-underline">grlwealth@grlwealth.com</a>
-                        </div>
-                        <div class="d-flex align-items-start">
-                            <i class="fas fa-phone-alt fa-lg me-3 mt-1"></i>
-                            <a href="tel:+918431622457" class="text-white text-decoration-underline">+91 84316 22457</a>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter -->
-                    <div class="col-lg-3">
-                        <h5 class="mb-4 text-light text-uppercase">Newsletter</h5>
-                        <p>Get the latest market insights and updates from GRL Wealth directly to your inbox.</p>
-                        <div class="position-relative mb-3">
-                            <input type="email" class="form-control rounded-pill py-2 ps-3 pe-5"
-                                placeholder="Enter your email">
-                            <button
-                                class="btn btn-light text-primary rounded-pill position-absolute top-0 end-0 mt-1 me-1 px-3">Sign
-                                Up</button>
-                        </div>
-                        <div class="d-flex align-items-center mt-3">
-                            <a href="tel:+918431622457"
-                                class="btn btn-lg-square rounded-circle bg-light text-primary"><i
-                                    class="fa fa-phone-alt"></i></a>
-                            <div class="ms-3">
-                                <small>Call Our Experts</small><br>
-                                <strong>+91 84316 22457</strong>
-                            </div>
-                        </div>
-                    </div>
-
+                    <h2 class="text-primary mb-3"><i class="fa fa-bullseye me-2"></i>Mission</h2>
+                    <p class="mb-4">To provide <strong>personalized, transparent, and ethical</strong> mutual fund
+                        distribution services, guiding our clients towards <strong>financial security and
+                            prosperity</strong> through tailored investment solutions and continuous support.</p>
                 </div>
             </div>
         </div>
-        <style>
-            .btn-outline-light:hover {
-                background-color: #ffffff !important;
-                color: #0056a3 !important;
-                transition: all 0.3s ease;
-            }
-        </style>
-        <!-- Footer End -->
+    </div>
 
 
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4" style="background-color: #004b91;">
-            <div class="container">
-                <div class="row g-4 align-items-center justify-content-between">
-                    <div class="col-md-6 text-center text-md-end">
-                        <span class="text-white">
-                            <i class="fas fa-copyright me-2"></i>
-                            <a href="#" class="text-white text-decoration-none">GRL-Wealth</a>, All rights reserved. |
-                        </span>
+    <!-- About End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid team py-5" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary text-uppercase fw-bold">Our Founders</h4>
+                <h1 class="display-5 fw-semibold">Meet the Pillars of GRL</h1>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Founder 1 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item shadow rounded-3 overflow-hidden h-100 bg-white">
+                        <div class="team-img position-relative">
+                            <img src="img/founder1.jpg" class="img-fluid w-100" alt="Ramesh Reddy Gajjala"
+                                style="object-fit: cover; height: 300px;">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h5 class="mb-1">Ramesh Reddy Gajjala</h5>
+                            <p class="text-muted small">Founder & Visionary</p>
+                        </div>
                     </div>
-                    <div class="col-md-6 text-center text-md-start">Designed by
-                        <a class="text-white text-decoration-underline" href="https://www.aspironkhuze.com/"
-                            target="_blank">
-                            Aspiron Khuze Technologies Pvt Ltd
-                        </a>
+                </div>
+
+                <!-- Founder 2 -->
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="team-item shadow rounded-3 overflow-hidden h-100 bg-white">
+                        <div class="team-img position-relative">
+                            <img src="img/founder2.jpg" class="img-fluid w-100" alt="Radhika Gajjala"
+                                style="object-fit: cover; height: 300px;">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h5 class="mb-1">Radhika Gajjala</h5>
+                            <p class="text-muted small">Co-Founder & Strategist</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
-        <!-- Copyright End -->
+    </div>
+    <!-- Team End -->
+
+    <!-- Optional styling -->
+    <style>
+        .team-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-img img {
+            transition: transform 0.3s ease;
+        }
+
+        .team-img:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <!-- Team End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <!-- Footer Start -->
+    <div class="container-fluid py-5 text-white" style="background-color: #002B5B;">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- About & Social -->
+                <div class="col-lg-4">
+                    <a href="index.html"> <img src="img\grllogo\GRL Wealth Logo_White.png" alt="GRL Wealth Logo"
+                            class="mb-3" style="max-width: 180px;"></a>
+                    <p>
+                        GRL Wealth has served over 430+ clients with smart investment solutions. We are certified
+                        distributors partnered with NJ Wealth, committed to guiding you to financial freedom.
+                    </p>
+                    <div class="d-flex mt-3">
+                        <a class="btn btn-outline-light btn-sm rounded-circle me-2"
+                            href="https://www.facebook.com/GRLwealth/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-sm rounded-circle me-2"
+                            href="https://www.youtube.com/@grlwealth/" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-sm rounded-circle"
+                            href="https://www.linkedin.com/in/grl-wealth/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-lg-2">
+                    <h5 class="mb-4 text-light text-uppercase">Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="Products.html" class="text-white text-decoration-none">Products</a></li>
+                        <li><a href="service.html" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="studio.html" class="text-white text-decoration-none">Studio</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3">
+                    <h5 class="mb-4 text-light text-uppercase">Contact Us</h5>
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="fas fa-map-marker-alt fa-lg me-3 mt-1"></i>
+                        <span>123 Street, New York, USA</span>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <i class="fas fa-envelope fa-lg me-3 mt-1"></i>
+                        <a href="mailto:grlwealth@grlwealth.com"
+                            class="text-white text-decoration-underline">grlwealth@grlwealth.com</a>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-phone-alt fa-lg me-3 mt-1"></i>
+                        <a href="tel:+918431622457" class="text-white text-decoration-underline">+91 84316 22457</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3">
+                    <h5 class="mb-4 text-light text-uppercase">Newsletter</h5>
+                    <p>Get the latest market insights and updates from GRL Wealth directly to your inbox.</p>
+                    <div class="position-relative mb-3">
+                        <input type="email" class="form-control rounded-pill py-2 ps-3 pe-5"
+                            placeholder="Enter your email">
+                        <button
+                            class="btn btn-light text-primary rounded-pill position-absolute top-0 end-0 mt-1 me-1 px-3">Sign
+                            Up</button>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <a href="tel:+918431622457" class="btn btn-lg-square rounded-circle bg-light text-primary"><i
+                                class="fa fa-phone-alt"></i></a>
+                        <div class="ms-3">
+                            <small>Call Our Experts</small><br>
+                            <strong>+91 84316 22457</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <style>
+        .btn-outline-light:hover {
+            background-color: #ffffff !important;
+            color: #0056a3 !important;
+            transition: all 0.3s ease;
+        }
+    </style>
+    <!-- Footer End -->
 
 
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4" style="background-color: #004b91;">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-between">
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="text-white">
+                        <i class="fas fa-copyright me-2"></i>
+                        <a href="#" class="text-white text-decoration-none">GRL-Wealth</a>, All rights reserved. |
+                    </span>
+                </div>
+                <div class="col-md-6 text-center text-md-start">Designed by
+                    <a class="text-white text-decoration-underline" href="https://www.aspironkhuze.com/"
+                        target="_blank">
+                        Aspiron Khuze Technologies Pvt Ltd
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
 
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
 
 </html>

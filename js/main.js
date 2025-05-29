@@ -21,7 +21,7 @@
         if ($(this).scrollTop() > 45) {
             $('.nav-bar').addClass('sticky-top shadow-sm').css('top', '0px');
         } else {
-            $('.nav-bar').removeClass('sticky-top shadow-sm').css('top', '-100px');
+            $('.nav-bar').removeClass('sticky-top shadow-sm').css('top', '0px');
         }
     });
 
