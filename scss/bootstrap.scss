@@ -1,13 +1,14 @@
 /******* Customized Bootstrap ********/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 $primary: #015FC9;
-$secondary:#0BE1FF;
+$secondary: #0BE1FF;
 $light: #F2F5F9;
 $dark: #16243D;
 
-$font-family-base: "Inter",sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
+$headings-font-family: 'Montserrat', sans-serif;
 
-$headings-font-family: "DM Sans", sans-serif;
 
 $body-color: #787878;
 
