@@ -34,20 +34,6 @@
 
 <body>
     <style>
-        .nav-bar {
-            background-color: #002B5B;
-        }
-
-        .navbar-nav .nav-link {
-            color: white;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #F0A500;
-        }
-
         .btn-primary {
             background-color: #F0A500;
             border: none;
@@ -132,14 +118,52 @@
 
 
     <!-- nav start  -->
-    <!-- nav start  -->
-    <div class="container-fluid nav-bar px-0">
+    <!-- Navbar Styles -->
+    <style>
+        .nav-bar {
+            background-color: #002B5B;
+            z-index: 1030;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #F0A500;
+        }
+
+        .btn-primary {
+            background-color: #F0A500;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #d18c00;
+        }
+
+        .navbar-toggler {
+            border: none;
+            outline: none;
+            color: white;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+    </style>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar px-0 position-sticky top-0">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a href="index.html" class="navbar-brand p-0">
                     <img src="grl-logo-bg.png" alt="Logo" style="height: 50px;">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -152,7 +176,6 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="nav-btn px-3">
-                        <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active">Search</a> -->
                         <a href="login.html"
                             class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login/SignUp</a>
                     </div>
@@ -160,28 +183,32 @@
             </nav>
         </div>
     </div>
-    <!-- nav ends  -->
-    <!-- nav ends  -->
+    <!-- Navbar End -->
 
     <section>
-        <style>
-            #main-img {
-                height: 87vh;
-            }
-
-            @media screen and (max-width: 768px) {
+        <section>
+            <style>
                 #main-img {
-                    height: auto;
+                    height: 87vh;
+                    object-fit: cover;
                 }
 
-            }
-        </style>
+                @media screen and (max-width: 768px) {
+                    #main-img {
+                        height: auto;
+                    }
+                }
+            </style>
+        </section>
+
         <div>
             <img id="main-img" src="roadmap-about2.png" alt="Roadmap"
                 class="w-100  rounded-lg shadow-lg object-cover" />
         </div>
 
     </section>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- About Section -->
     <div class="container-fluid bg-light about py-5">
