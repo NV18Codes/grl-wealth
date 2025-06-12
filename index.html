@@ -126,66 +126,41 @@
             padding: 5rem;
             color: white;
             text-align: left;
-
             background: #007bff url('bg-img%20GRL.jpg') no-repeat center center;
             background-size: cover;
-
             position: relative;
         }
 
-        @media (max-width: 768px) {
+        /* Default text container */
+        .text-container {
+            max-width: 90%;
+        }
+
+        /* Mobile view - up to 768px */
+        @media screen and (max-width: 768px) {
             #aboutmainpage {
-                padding: 2rem;
-                text-align: center;
+                background: url('1000017177[1].png') no-repeat center center;
+                background-size: cover;
+                padding: 0;
+                /* remove large padding for center alignment */
                 justify-content: center;
             }
 
-            #aboutmainpage .text-start {
-                text-align: center !important;
-            }
-        }
-
-
-        #aboutmainpage h3 {
-            font-size: 3rem;
-            font-weight: bold;
-            margin: 0;
-        }
-
-        @media (max-width: 1024px) {
-            #aboutmainpage {
-                padding: 3rem;
-                height: 80vh;
+            .text-container {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                padding: 1.5rem 2rem;
+                border-radius: 1rem;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
                 text-align: center;
-                justify-content: center;
             }
 
-            #aboutmainpage h3 {
-                font-size: 2.5rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #aboutmainpage {
-                padding: 2rem;
-                height: 70vh;
-            }
-
-            #aboutmainpage h3 {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            #aboutmainpage {
-                padding: 1rem;
-                height: 60vh;
-                text-align: center;
-                justify-content: center;
-            }
-
-            #aboutmainpage h3 {
+            .text-container h1 {
                 font-size: 1.8rem;
+                color: white;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
             }
         }
     </style>
@@ -221,10 +196,11 @@
     </div>
     <!-- nav ends  -->
     <div id="aboutmainpage">
-        <div class="text-white text-start">
+        <div class="text-container text-white text-start">
             <h1 class="display-4 fw-italic text-white">Navigate Your <br> Financial Future</h1>
         </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -255,7 +231,7 @@
                                 goods</p>
                             <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Our life insurance is
                                 flexible</p> -->
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="contact.html">More Information</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="about.html">More Information</a>
                     </div>
                 </div>
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
@@ -349,7 +325,8 @@
             </div>
 
             <div class="text-center mt-5">
-                <img src="https://imgs.search.brave.com/n2VJAjnJQLQ2RDgEuzKgzD0DV8TSD3s6CS6Tm2kQ1AY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjIv/MjEzLzI2NC9zbWFs/bC9tYW4tYW5kLXBp/bGUtb2YtY29pbnMt/Y29uY2VwdC1vZi1z/YXZpbmctbW9uZXkt/dG8tcHJlcGFyZS1m/b3Itcmlzay1zYXZp/bmctYW5kLWFjY3Vt/dWxhdGluZy1tb25l/eS1maW5hbmNpYWwt/cGxhbm5pbmctYW5k/LWludmVzdG1lbnQt/Z3Jvd3RoLWluLWFz/c2V0cy1hbmQtcHJv/Zml0cy1idWRnZXQt/bWFuYWdlbWVudC1y/aXNrLW1hbmFnZW1l/bnQtZnJlZS1waG90/by5qcGc" alt="Financial Journey" class="img-fluid rounded shadow">
+                <img src="https://imgs.search.brave.com/n2VJAjnJQLQ2RDgEuzKgzD0DV8TSD3s6CS6Tm2kQ1AY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjIv/MjEzLzI2NC9zbWFs/bC9tYW4tYW5kLXBp/bGUtb2YtY29pbnMt/Y29uY2VwdC1vZi1z/YXZpbmctbW9uZXkt/dG8tcHJlcGFyZS1m/b3Itcmlzay1zYXZp/bmctYW5kLWFjY3Vt/dWxhdGluZy1tb25l/eS1maW5hbmNpYWwt/cGxhbm5pbmctYW5k/LWludmVzdG1lbnQt/Z3Jvd3RoLWluLWFz/c2V0cy1hbmQtcHJv/Zml0cy1idWRnZXQt/bWFuYWdlbWVudC1y/aXNrLW1hbmFnZW1l/bnQtZnJlZS1waG90/by5qcGc"
+                    alt="Financial Journey" class="img-fluid rounded shadow">
             </div>
         </div>
     </section>
@@ -407,60 +384,69 @@
         <!-- Section Header -->
         <div class="position-relative container text-center mb-5" style="z-index: 2;">
             <h3 class="display-4 fw-italic text-white">Our Products</h3>
-            <p class="fs-5 fst-italic">Explore a wide range of financial and insurance services tailored to your
-                needs.</p>
+            <p class="fs-5 fst-italic">Explore a wide range of financial and insurance services tailored to your needs.
+            </p>
         </div>
 
         <!-- Product Grid -->
-        <div class="position-relative container">
-            <div class="row g-4 justify-content-center" style="z-index: 2; position: relative;">
+        <div class="position-relative container" style="z-index: 2;">
+            <div class="row g-4 justify-content-center">
                 <!-- Product Items -->
                 <div class="col-md-3 col-sm-6 text-center">
                     <div class="bg-white p-4 h-100 shadow-sm rounded">
-                        <img class="icon-animated" src="img/products/icons8-rupee-64.png" alt="">
+                        <img class="icon-animated" src="img/products/icons8-rupee-64.png" alt="Mutual Funds">
                         <h5 class="mt-3 fw-bold">Mutual Funds</h5>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6 text-center">
                     <div class="bg-white p-4 h-100 shadow-sm rounded">
-                        <img class="icon-animated" src="img/products/icons8-health-insurance-50.png" alt="">
+                        <img class="icon-animated" src="img/products/icons8-health-insurance-50.png"
+                            alt="Health Insurance">
                         <h5 class="mt-3 fw-bold">Health Insurance</h5>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6 text-center">
                     <div class="bg-white p-4 h-100 shadow-sm rounded">
-                        <img class="icon-animated" src="img/products/icons8-rupee-64.png" alt="">
+                        <img class="icon-animated" src="img/products/icons8-rupee-64.png" alt="Bonds">
                         <h5 class="mt-3 fw-bold">Bonds</h5>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6 text-center">
                     <div class="bg-white p-4 h-100 shadow-sm rounded">
-                        <img class="icon-animated" src="img/products/icons8-growth-50.png" alt="">
+                        <img class="icon-animated" src="img/products/icons8-growth-50.png" alt="Capital Gain Bonds">
                         <h5 class="mt-3 fw-bold">Capital Gain Bonds</h5>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6 text-center">
                     <div class="bg-white p-4 h-100 shadow-sm rounded">
-                        <img class="icon-animated" src="img/products/icons8-capital-omega-50.png" alt="">
+                        <img class="icon-animated" src="img/products/icons8-capital-omega-50.png"
+                            alt="Market Linked Debentures">
                         <h5 class="mt-3 fw-bold">Market Linked Debentures</h5>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6 text-center">
                     <div class="bg-white p-4 h-100 shadow-sm rounded">
-                        <img class="icon-animated" src="img/products/icons8-home-50.png" alt="">
+                        <img class="icon-animated" src="img/products/icons8-home-50.png" alt="Portfolio Services">
                         <h5 class="mt-3 fw-bold">Portfolio Services</h5>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6 text-center">
                     <div class="bg-white p-4 h-100 shadow-sm rounded">
-                        <img class="icon-animated" src="img/products/icons8-umbrella-50.png" alt="">
+                        <img class="icon-animated" src="img/products/icons8-umbrella-50.png" alt="Life Term Insurance">
                         <h5 class="mt-3 fw-bold">Life Term Insurance</h5>
                     </div>
                 </div>
+
                 <div class="col-md-3 col-sm-6 text-center">
                     <div class="bg-white p-4 h-100 shadow-sm rounded">
                         <img class="icon-animated" src="img/products/icons8-accidental-insurance-24.png"
-                            style="height: 2.5rem;" alt="">
+                            style="height: 2.5rem;" alt="Personal Accidental">
                         <h5 class="mt-3 fw-bold">Personal Accidental</h5>
                     </div>
                 </div>
@@ -468,7 +454,7 @@
 
             <!-- View All Button -->
             <div class="text-center mt-5">
-                <a href="products.html" class="btn btn-primary rounded-pill px-4 py-2">View All Products</a>
+                <a href="Products.html" class="btn btn-primary rounded-pill px-4 py-2">View Products</a>
             </div>
         </div>
     </div>
@@ -485,10 +471,11 @@
         }
     </style>
 
-    <!-- jQuery (Required for some Bootstrap components) -->
+    <!-- jQuery (Optional unless Bootstrap components require it) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <hr>
+
     <!-- Services Start -->
     <div class="container-fluid bg-light py-5">
         <div class="container py-5">
@@ -556,8 +543,7 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a href="Financialtool.html" class="btn btn-primary rounded-pill px-4 py-2">Know More Financial
-                    Tools</a>
+                <a href="Financialtool.html" class="btn btn-primary rounded-pill px-4 py-2">Know More</a>
             </div>
         </div>
     </div>
