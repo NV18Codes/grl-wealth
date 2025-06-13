@@ -189,6 +189,7 @@
 
         <!-- Contact Start -->
 
+        <!-- Contact Us Start -->
         <div class="container-fluid contact bg-light py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
@@ -206,92 +207,78 @@
                     </div>
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
                         <div>
-                            <form id="contact-form" method="POST" class="bg-white rounded p-5">
+                            <form id="contact-form" onsubmit="sendContactWhatsApp(event)" class="bg-white rounded p-5">
                                 <div class="row g-3">
                                     <div class="col-lg-12 col-xl-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control border-0" id="name"
+                                            <input type="text" class="form-control border-0" id="contact-name"
                                                 placeholder="Your Name" required>
-                                            <label for="name">Your Name</label>
+                                            <label for="contact-name">Your Name</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-xl-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control border-0" id="email"
+                                            <input type="email" class="form-control border-0" id="contact-email"
                                                 placeholder="Your Email" required>
-                                            <label for="email">Your Email</label>
+                                            <label for="contact-email">Your Email</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-xl-6">
                                         <div class="form-floating">
-                                            <input type="tel" class="form-control border-0" id="phone"
+                                            <input type="tel" class="form-control border-0" id="contact-phone"
                                                 placeholder="Phone" required>
-                                            <label for="phone">Your Phone</label>
+                                            <label for="contact-phone">Your Phone</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control border-0" placeholder="Leave a message here"
-                                                id="message" style="height: 120px"></textarea>
-                                            <label for="message">Message</label>
+                                                id="contact-message" style="height: 120px"></textarea>
+                                            <label for="contact-message">Message</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button onclick="sendMessage(event)" class="btn btn-primary w-100 py-3">Send
-                                            Message</button>
-
-
+                                        <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <!-- EmailJS SDK -->
-                        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-                        <script>
-                            (function () {
-                                emailjs.init("HeSCMK77qCuHDTGHj"); // Your EmailJS Public Key
-                            })();
-                        </script>
-                        <!-- JavaScript Logic -->
-                        <script>
-                            function sendMessage(e) {
-                                e.preventDefault(); //  Prevent form from reloading
 
-                                const params = {
-                                    name: document.getElementById("name").value,
-                                    email: document.getElementById("email").value,
-                                    phone: document.getElementById("phone").value,
-                                    message: document.getElementById("message").value,
-                                    time: new Date().toLocaleString()
-                                };
-                                console.log(params);
+                        <script>
+                            function sendContactWhatsApp(event) {
+                                event.preventDefault();
 
-                                const serviceId = "service_q5s6goe"; // Your EmailJS Service ID
-                                const templateId = "template_kh00ylt"; // Your EmailJS Template ID
-                                emailjs.send(serviceId, templateId, params)
-                                    .then(function (response) {
-                                        alert("✅ Message sent successfully!");
-                                        document.getElementById("contact-form").reset();
-                                        console.log("SUCCESS!", response.status, response.text);
-                                    }, function (error) {
-                                        alert(" Failed to send message. Please check console for details.");
-                                        console.error("FAILED...", error);
-                                    });
+                                let name = document.getElementById('contact-name').value.trim();
+                                let email = document.getElementById('contact-email').value.trim();
+                                let phone = document.getElementById('contact-phone').value.trim();
+                                let message = document.getElementById('contact-message').value.trim();
+
+                                // Basic validation
+                                if (!name || !email || !phone || !message) {
+                                    alert("Please fill in all the required fields.");
+                                    return;
+                                }
+
+                                const phoneRegex = /^[6-9]\d{9}$/;
+                                if (!phoneRegex.test(phone)) {
+                                    alert("Please enter a valid 10-digit phone number.");
+                                    return;
+                                }
+
+                                let contactMessage = `Contact Us Form Submission:%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+
+                                let whatsappURL = `https://wa.me/8431622457?text=${contactMessage}`;
+
+                                alert("Redirecting to WhatsApp...");
+                                window.open(whatsappURL, '_blank');
                             }
                         </script>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="rounded">
-                <iframe class="rounded w-100" style="height: 400px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.738658957007!2d77.76402702454496!3d12.860148967313009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae738c023db8b3%3A0x1c0e1c2d5d103375!2sSoul%20Tree%20by%20Modern%20Spaaces!5e0!3m2!1sen!2sin!4v1748866037602!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <!-- Contact End -->
+        <!-- Contact Us End -->
+
 
 
         <!-- Footer Start -->
