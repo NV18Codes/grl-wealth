@@ -929,3 +929,21 @@ body, html {
 }
 
 /*** copyright end ***/
+
+@media (max-width: 991px) {
+    #navCloseBtn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #navCloseBtn {
+        display: none !important;
+    }
+}
