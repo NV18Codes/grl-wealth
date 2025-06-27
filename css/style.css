@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+:root {
+  --brand-tertiary: #03243F;
+  --brand-secondary: #064974;
+  --brand-primary: #0068A7;
+  --brand-gold: #C0883E;
+  --brand-accent: #E9E9EA;
+  --brand-white: #fff;
+}
+
+body, html {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}
+
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
@@ -128,8 +142,7 @@
 
 /*** Navbar Start ***/
 .nav-bar {
-    background: #1D4788;
-
+    background: var(--brand-secondary);
     transition: 1s;
 }
 

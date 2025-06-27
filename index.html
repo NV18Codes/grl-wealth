@@ -166,14 +166,15 @@
     </style>
 
 
-    <!-- nav start  -->
-    <div class="container-fluid nav-bar px-0">
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar px-0 position-sticky top-0">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a href="index.html" class="navbar-brand p-0">
                     <img src="grl-logo-bg.png" alt="Logo" style="height: 50px;">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -186,21 +187,125 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="nav-btn px-3">
-                        <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active">Search</a> -->
-                        <a href="login.html"
-                            class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login/SignUp</a>
+                        <a href="login.html" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login/SignUp</a>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-    <!-- nav ends  -->
-    <div id="aboutmainpage">
-        <div class="text-container text-white text-start">
-            <h1 class="display-4 fw-italic text-white">Navigate Your <br> Financial Future</h1>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <style>
+    .hero-landing-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        min-height: 400px;
+        overflow: hidden;
+    }
+    .hero-landing-img {
+        width: 100vw;
+        height: 100vh;
+        min-height: 400px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+    .hero-overlay {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(20, 40, 60, 0.45);
+        z-index: 1;
+    }
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 6vw;
+        transform: translateY(-50%);
+        color: #fff;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: left;
+        z-index: 2;
+        padding: 1.5rem 2.5rem 1.5rem 0;
+        border-radius: 1rem;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        max-width: 40vw;
+        min-width: 320px;
+    }
+    .hero-quote-mark {
+        font-size: 4rem;
+        color: var(--brand-primary);
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 900;
+        line-height: 1;
+        opacity: 0.7;
+    }
+    @media (max-width: 1200px) {
+        .hero-text {
+            font-size: 2rem;
+            max-width: 55vw;
+            min-width: 200px;
+            padding: 1rem 1.5rem 1rem 0;
+        }
+        .hero-quote-mark {
+            font-size: 2.5rem;
+        }
+    }
+    @media (max-width: 991px) {
+        .hero-landing-container, .hero-landing-img {
+            height: 60vh;
+            min-height: 200px;
+        }
+        .hero-text {
+            font-size: 1.2rem;
+            left: 4vw;
+            max-width: 80vw;
+            min-width: 120px;
+            padding: 0.5rem 1rem 0.5rem 0;
+            gap: 0.5rem;
+        }
+        .hero-quote-mark {
+            font-size: 1.5rem;
+        }
+    }
+    @media (max-width: 600px) {
+        .hero-landing-container, .hero-landing-img {
+            height: 40vh;
+            min-height: 120px;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1rem;
+            text-align: center;
+            max-width: 95vw;
+            min-width: 0;
+            padding: 0.3rem 0.5rem;
+            gap: 0.2rem;
+        }
+        .hero-quote-mark {
+            font-size: 1.1rem;
+        }
+    }
+    </style>
+    <div class="hero-landing-container">
+        <img src="bg-image.jpg" alt="Landing" class="hero-landing-img">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <span class="hero-quote-mark">&#8220;</span>
+            <span>Navigating Your<br>Financial Future</span>
+            <span class="hero-quote-mark">&#8221;</span>
         </div>
     </div>
-
+    <!-- Hero Section End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -510,14 +615,14 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="bg-white rounded p-4 h-100 shadow-sm text-center">
                         <h5 class="mb-3">Child Education Planner</h5>
-                        <p>Plan for your child’s education expenses smartly and stay financially prepared for the
+                        <p>Plan for your child's education expenses smartly and stay financially prepared for the
                             future.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="bg-white rounded p-4 h-100 shadow-sm text-center">
                         <h5 class="mb-3">Single Goal Planner</h5>
-                        <p>Whether it’s retirement or a vacation, plan for one specific goal and get a step-by-step
+                        <p>Whether it's retirement or a vacation, plan for one specific goal and get a step-by-step
                             investment strategy.</p>
                     </div>
                 </div>
@@ -590,7 +695,7 @@
                                     <div class="accordion-body bg-light text-dark rounded">
                                         Mutual Funds offer professional management, diversification, and potential
                                         for
-                                        long-term wealth creation. They’re suitable for both new and seasoned
+                                        long-term wealth creation. They're suitable for both new and seasoned
                                         investors.
                                     </div>
                                 </div>
@@ -608,7 +713,7 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body bg-light text-dark rounded">
-                                        Start by identifying your basic needs (like retirement, children’s
+                                        Start by identifying your basic needs (like retirement, children's
                                         education) and
                                         aspirations (like a foreign trip, luxury home). At GRL Wealth, we help you
                                         map and
@@ -935,7 +1040,7 @@
                     <div class="d-flex align-items-start mb-3">
                         <i class="fas fa-map-marker-alt fa-lg me-3 mt-1"></i>
                         <span>B319, Serinity Block, Soultree Apartment, Kadaagrahara, Smpuragate,
-                            Sarjapura, 562125</span>
+                            Sarjapura, 562125</span>
                     </div>
                     <div class="d-flex align-items-start mb-3">
                         <i class="fas fa-envelope fa-lg me-3 mt-1"></i>
