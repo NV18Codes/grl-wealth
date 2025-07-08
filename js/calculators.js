@@ -90,14 +90,19 @@ function calculateChildEducation() {
     document.getElementById('childEduResult').innerHTML = result;
 }
 
+// Child Education Plan (alternative function name)
+function calculateChildEducationPlan() {
+    calculateChildEducation();
+}
+
 // Single Goal Planner
 function calculateSingleGoal() {
-    const cost = parseFloat(document.getElementById('cost').value);
-    const years = parseFloat(document.getElementById('years').value);
-    const savingsIncrease = parseFloat(document.getElementById('savings').value) / 100;
-    const rate = parseFloat(document.getElementById('returns').value) / 100;
-    const considerInflation = document.getElementById('inflation-toggle').checked;
-    const inflation = considerInflation ? parseFloat(document.getElementById('inflation').value) / 100 : 0;
+    const cost = parseFloat(document.getElementById('goal-cost').value);
+    const years = parseFloat(document.getElementById('goal-years').value);
+    const savingsIncrease = parseFloat(document.getElementById('goal-savings').value) / 100;
+    const rate = parseFloat(document.getElementById('goal-returns').value) / 100;
+    const considerInflation = document.getElementById('goal-inflation-toggle').checked;
+    const inflation = considerInflation ? parseFloat(document.getElementById('goal-inflation').value) / 100 : 0;
     
     if (isNaN(cost) || isNaN(years) || isNaN(savingsIncrease) || isNaN(rate)) {
         alert('Please enter valid numbers in all fields');
@@ -118,13 +123,13 @@ function calculateSingleGoal() {
 
 // Buy a Car/Home Calculator
 function calculateBuyAsset() {
-    const cost = parseFloat(document.getElementById('cost').value);
-    const years = parseFloat(document.getElementById('years').value);
-    const rate = parseFloat(document.getElementById('returns').value) / 100;
-    const inflation = parseFloat(document.getElementById('inflation').value) / 100;
-    const downPaymentPercent = parseFloat(document.getElementById('down-payment').value) / 100;
-    const loanRate = parseFloat(document.getElementById('loan-interest').value) / 100;
-    const loanYears = parseFloat(document.getElementById('loan-duration').value);
+    const cost = parseFloat(document.getElementById('asset-cost').value);
+    const years = parseFloat(document.getElementById('asset-years').value);
+    const rate = parseFloat(document.getElementById('asset-returns').value) / 100;
+    const inflation = parseFloat(document.getElementById('asset-inflation').value) / 100;
+    const downPaymentPercent = parseFloat(document.getElementById('asset-down-payment').value) / 100;
+    const loanRate = parseFloat(document.getElementById('asset-loan-interest').value) / 100;
+    const loanYears = parseFloat(document.getElementById('asset-loan-duration').value);
     
     if (isNaN(cost) || isNaN(years) || isNaN(rate) || isNaN(inflation) || isNaN(downPaymentPercent) || isNaN(loanRate) || isNaN(loanYears)) {
         alert('Please enter valid numbers in all fields');
@@ -155,9 +160,9 @@ function calculateBuyAsset() {
 
 // EMI Calculator
 function calculateEMI() {
-    const amount = parseFloat(document.getElementById('loan-amount').value);
-    const rate = parseFloat(document.getElementById('interest-rate').value) / 100;
-    const years = parseFloat(document.getElementById('loan-duration').value);
+    const amount = parseFloat(document.getElementById('emi-loan-amount').value);
+    const rate = parseFloat(document.getElementById('emi-interest-rate').value) / 100;
+    const years = parseFloat(document.getElementById('emi-loan-duration').value);
     
     if (isNaN(amount) || isNaN(rate) || isNaN(years)) {
         alert('Please enter valid numbers in all fields');
@@ -177,16 +182,22 @@ function calculateEMI() {
     document.getElementById('emiResult').innerHTML = result;
 }
 
+// EMI Calculator (alternative function name)
+function calculateEmi() {
+    calculateEMI();
+}
+
 // Save Tax with ELSS Calculator
 function calculateTaxSavings() {
-    const investment = parseFloat(document.getElementById('investment').value);
-    const taxRate = parseFloat(document.querySelector('input[name="tax-slab"]:checked').value) / 100;
+    const investment = parseFloat(document.getElementById('tax-investment').value);
+    const selectedTaxSlab = document.querySelector('input[name="tax-slab"]:checked');
     
-    if (isNaN(investment) || isNaN(taxRate)) {
+    if (isNaN(investment) || !selectedTaxSlab) {
         alert('Please enter valid numbers and select tax slab');
         return;
     }
-
+    
+    const taxRate = parseFloat(selectedTaxSlab.value.replace('%', '')) / 100;
     const maxDeduction = Math.min(investment, 150000); // 80C limit
     const taxSaved = maxDeduction * taxRate;
     
@@ -196,8 +207,19 @@ function calculateTaxSavings() {
 
 // Toggle inflation input
 function toggleInflation() {
-    const inflationInput = document.getElementById('inflation');
-    inflationInput.disabled = !document.getElementById('inflation-toggle').checked;
+    const inflationInput = document.getElementById('goal-inflation');
+    const toggleCheckbox = document.getElementById('goal-inflation-toggle');
+    if (inflationInput && toggleCheckbox) {
+        inflationInput.disabled = !toggleCheckbox.checked;
+    }
+}
+
+// Update down payment amount
+function updateDownPaymentAmount() {
+    const cost = parseFloat(document.getElementById('asset-cost').value) || 0;
+    const downPaymentPercent = parseFloat(document.getElementById('asset-down-payment').value) || 0;
+    const equivalentAmount = (cost * downPaymentPercent) / 100;
+    document.getElementById('asset-equivalent-amount').value = equivalentAmount.toFixed(2);
 }
 
 // Initialize calculator buttons
