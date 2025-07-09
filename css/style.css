@@ -9,7 +9,7 @@
 }
 
 body, html {
-  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-family: 'Montserrat' !important;
 }
 
 /*** Spinner Start ***/
@@ -81,12 +81,12 @@ body, html {
 }
 
 .btn.btn-primary {
-    color: var(--bs-white);
+    color: #C0883E;
     border: none;
 }
 
 .btn.btn-primary:hover {
-    background: var(--bs-dark);
+    background: var(--bs-primary);
     color: var(--bs-white);
 }
 
@@ -169,7 +169,7 @@ body, html {
 .navbar-light .navbar-nav .nav-item.active,
 .navbar-light .navbar-nav .nav-item:hover .nav-link,
 .navbar-light .navbar-nav {
-    color: var(--bs-primary);
+    color: var(--bs-white)  ;
 }
 
 .nav-item.active .nav-link {
@@ -244,7 +244,7 @@ body, html {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background: var(--bs-primary); */
+        /* background: var(--bs-primary);    */
         border-radius: 10px;
     }
 
@@ -270,13 +270,21 @@ body, html {
         transform: rotateX(0deg);
         visibility: visible;
         margin-top: 20px;
-        background: var(--bs-light);
+        background-color: #C0883E;
         transition: .5s;
         opacity: 1;
     }
 }
 
 /*** Navbar End ***/
+
+.nav-item.nav-link:hover {
+    color: #C0883E;
+}
+
+.navbar-nav .nav-item.nav-link:hover {
+    color: #C0883E !important;
+}
 
 
 /*** Carousel Hero Header Start ***/
@@ -389,7 +397,8 @@ body, html {
 /*** Feature Start ***/
 .feature .feature-item {
     border-radius: 10px;
-    background: var(--bs-white);
+    background: #C0883E;
+    color: white;
     transition: 0.5s;
 }
 
@@ -920,6 +929,25 @@ body, html {
 }
 
 /*** Footer End ***/
+
+#contact-form input.form-control,
+#contact-form textarea.form-control {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+#contact-form button.btn-primary {
+    border: 1px solid #C0883E;
+    background-color: #C0883E;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button.btn-primary:hover {
+    background-color: #a06f2e;
+    border-color: #a06f2e;
+}
 
 
 /*** copyright Start ***/

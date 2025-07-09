@@ -120,14 +120,16 @@
     </head>
 
     <body>
-        <div class="container-fluid nav-bar px-0">
+        <!-- Navbar Start -->
+        <div style="background-color:#064974;" class="container-fluid nav-bar px-0 position-sticky top-0">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-dark">
                     <a href="index.html" class="navbar-brand p-0">
                         <img src="grl-logo-bg.png" alt="Logo" style="height: 85px;">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="fa fa-bars"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -140,14 +142,14 @@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="nav-btn px-3">
-                            <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white active">Search</a> -->
-                            <a href="login.html"
+                            <a href="login.html" style="color: #c0883e;"
                                 class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login/SignUp</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
+        <!-- Navbar End -->
         <!-- Modal Search Start -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
@@ -337,7 +339,7 @@
 
             .mutualfund-pink {
                 font-weight: bold;
-                background-color: #f8615a;
+                background-color: #064974;
                 display: flex;
                 padding: .5rem;
                 gap: .5rem;
@@ -349,7 +351,7 @@
             .fixedincome-blue {
                 font-weight: bold;
                 padding: .5rem;
-                background-color: #5abee8;
+                background-color: #C0883E;
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
@@ -360,7 +362,7 @@
             .Capitalmarket-yellow {
                 font-weight: bold;
                 padding: .5rem;
-                background-color: #efbd49;
+                background-color: #064974;
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
@@ -371,7 +373,7 @@
             .portfolio-orange {
                 font-weight: bold;
                 padding: .5rem;
-                background-color: #ff6c23;
+                background-color: #064974;
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
@@ -382,7 +384,7 @@
             .realeaste-green {
                 font-weight: bold;
                 padding: .5rem;
-                background-color: #95bb04;
+                background-color: #C0883E;
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
@@ -393,7 +395,7 @@
             .insurance-red {
                 font-weight: bold;
                 padding: .5rem;
-                background-color: #e30a12;
+                background-color: #C0883E;
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
@@ -404,7 +406,7 @@
             .insurance-yellow {
                 font-weight: bold;
                 padding: .5rem;
-                background-color: #ffdb0e;
+                background-color: #C0883E;
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
@@ -415,7 +417,7 @@
             .health-purple {
                 font-weight: bold;
                 padding: .5rem;
-                background-color: #bc2bff;
+                background-color: #064974;
                 display: flex;
                 gap: .5rem;
                 flex-direction: column;
@@ -493,22 +495,6 @@
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <div class="health-purple"
-                                style="height: 250px; width: 300px; align-items: center; display: flex; justify-content: center; font-size: x-large;">
-                                HEALTH INSURANCE
-                                <img src="img/products/icons8-health-insurance-50.png">
-                            </div>
-                        </div>
-                        <div class="flip-box-back">
-                            <p>Health insurance ensures comprehensive coverage against medical expenses, safeguarding
-                                your financial well‑being. With top plans from India’s best insurers, you gain access to
-                                quality healthcare while minimizing out-of-pocket costs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
                             <div class="fixedincome-blue"
                                 style="height: 250px; width: 300px; align-items: center; display: flex; justify-content: center; font-size: x-large;">
                                 BONDS
@@ -522,9 +508,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="contain3">
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
@@ -541,6 +524,11 @@
                         </div>
                     </div>
                 </div>
+
+
+            </div>
+
+            <div class="contain3">
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
@@ -554,6 +542,24 @@
                             <p>We offer comprehensive PMS solutions featuring both direct equity and mutual-fund-based
                                 strategies curated by India’s top Portfolio Managers. Some strategies are uniquely
                                 available only through our network.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="Capitalmarket-yellow"
+                                style="height: 250px; width: 300px; align-items: center; display: flex; justify-content: center; font-size: x-large;">
+                                CAPITAL GAIN BONDS
+                                <img src="img/products/icons8-growth-50.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <p>Capital Gain Bonds (under Section 54EC) allow investors to save on long-term capital
+                                gains tax by reinvesting in government-backed bonds issued by entities like REC and
+                                NHAI. These bonds offer fixed returns and are ideal for conservative, tax-efficient
+                                planning.</p>
                         </div>
                     </div>
                 </div>
@@ -573,23 +579,24 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="contain3">
+
                 <div class="flip-box">
                     <div class="flip-box-inner">
                         <div class="flip-box-front">
-                            <div class="Capitalmarket-yellow"
+                            <div class="health-purple"
                                 style="height: 250px; width: 300px; align-items: center; display: flex; justify-content: center; font-size: x-large;">
-                                CAPITAL GAIN BONDS
-                                <img src="img/products/icons8-growth-50.png" alt="">
+                                HEALTH INSURANCE
+                                <img src="img/products/icons8-health-insurance-50.png">
                             </div>
                         </div>
                         <div class="flip-box-back">
-                            <p>Capital Gain Bonds (under Section 54EC) allow investors to save on long-term capital
-                                gains tax by reinvesting in government-backed bonds issued by entities like REC and
-                                NHAI. These bonds offer fixed returns and are ideal for conservative, tax-efficient
-                                planning.</p>
+                            <p>Health insurance ensures comprehensive coverage against medical expenses, safeguarding
+                                your financial well‑being. With top plans from India’s best insurers, you gain access to
+                                quality healthcare while minimizing out-of-pocket costs.</p>
                         </div>
                     </div>
                 </div>
@@ -623,7 +630,7 @@
                             <a href="index.html"> <img src="img\grllogo\GRL Wealth Logo_White.png" alt="GRL Wealth Logo"
                                     class="mb-3" style="max-width: 180px;"></a>
                             <p>
-                                GRL Wealth has served over 430+ clients with smart investment solutions. We are
+                                GRL Wealth has served over 500+ clients with smart investment solutions. We are
                                 certified
                                 distributors partnered with NJ Wealth, committed to guiding you to financial freedom.
                             </p>
@@ -657,8 +664,8 @@
                             <h5 class="mb-4 text-light text-uppercase">Contact Us</h5>
                             <div class="d-flex align-items-start mb-3">
                                 <i class="fas fa-map-marker-alt fa-lg me-3 mt-1"></i>
-                                <span>B319, Serinity Block, Soultree Apartment, Kadaagrahara, Smpuragate,
-                                    Sarjapura, 562125</span>
+                                <span>B319, Serinity Block, Soultree Apartment, Kadaagrahara, Sompuragate,
+                                    Sarjapura, 562125</span>
                             </div>
                             <div class="d-flex align-items-start mb-3">
                                 <i class="fas fa-envelope fa-lg me-3 mt-1"></i>
