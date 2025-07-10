@@ -957,3 +957,19 @@ body, html {
 }
 
 /*** copyright end ***/
+
+.submit-btn, .reset, .reset-btn {
+    background-color: var(--brand-gold);
+    color: white;
+    width: 120px;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.submit-btn:hover, .reset:hover, .reset-btn:hover {
+    background-color: var(--brand-secondary);
+    color: white;
+}

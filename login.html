@@ -88,7 +88,7 @@
     </div> -->
     <!-- Topbar End -->
 
-    <style>
+  <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -116,11 +116,57 @@
         .btn-primary:hover {
             background-color: #d18c00;
         }
-    </style>
-    </head>
 
-    <body>
-         <!-- Navbar Start -->
+        #aboutmainpage {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 5rem;
+            color: white;
+            text-align: left;
+            background: #007bff url('bg-img%20GRL.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Default text container */
+        .text-container {
+            max-width: 90%;
+        }
+
+        /* Mobile view - up to 768px */
+        @media screen and (max-width: 768px) {
+            #aboutmainpage {
+                background: url('1000017177[1].png') no-repeat center center;
+                background-size: cover;
+                padding: 0;
+                /* remove large padding for center alignment */
+                justify-content: center;
+            }
+
+            .text-container {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                padding: 1.5rem 2rem;
+                border-radius: 1rem;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+                text-align: center;
+            }
+
+            .text-container h1 {
+                font-size: 1.8rem;
+                color: white;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            }
+        }
+    </style>
+
+
+    <!-- Navbar Start -->
     <div style="background-color:#064974;" class="container-fluid nav-bar px-0 position-sticky top-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -133,12 +179,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="Products.html" class="nav-item nav-link">Products</a>
-                        <a href="services.html" class="nav-item nav-link">Services</a>
-                        <a href="Financialtool.html" class="nav-item nav-link">Financial Tools</a>
-                        <a href="studio.html" class="nav-item nav-link">Studio</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a style="color: white;" href="about.html" class="nav-item nav-link">About</a>
+                        <a style="color: white;" href="Products.html" class="nav-item nav-link">Products</a>
+                        <a style="color: white;" href="services.html" class="nav-item nav-link">Services</a>
+                        <a style="color: white;" href="Financialtool.html" class="nav-item nav-link">Financial Tools</a>
+                        <a style="color: white;" href="studio.html" class="nav-item nav-link">Studio</a>
+                        <a style="color: white;" href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="nav-btn px-3">
                         <a href="login.html" style="color: #c0883e;" class="btn btn-primary rounded-pill py-2 px-4 ms-3 text-white">Login/SignUp</a>
@@ -296,8 +342,8 @@
             </div>
         </div>
 
-         <!-- Footer Start -->
-    <div class="container-fluid py-5 text-white" style="background-color: #002B5B;">
+          <!-- Footer Start -->
+    <div class="container-fluid py-5 text-white" style="background-color: #064974 !important;">
         <div class="container">
             <div class="row g-5">
 

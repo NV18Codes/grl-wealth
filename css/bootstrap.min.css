@@ -3078,7 +3078,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #FFD700;
+    background-color: #C0883E;
     border-color: #015fc9
 }
 
@@ -3258,21 +3258,21 @@ fieldset:disabled .btn {
 
 .btn-warning {
     color: #000;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: #C0883E;
+    border-color: #C0883E
 }
 
 .btn-warning:hover {
     color: #000;
-    background-color: #ffca2c;
-    border-color: #ffc720
+    background-color: #C0883E;
+    border-color: #C0883E
 }
 
 .btn-check:focus+.btn-warning,
 .btn-warning:focus {
     color: #000;
-    background-color: #ffca2c;
-    border-color: #ffc720;
+    background-color: #C0883E;
+    border-color: #C0883E;
     box-shadow: 0 0 0 .25rem rgba(217, 164, 6, .5)
 }
 
@@ -3282,8 +3282,8 @@ fieldset:disabled .btn {
 .btn-warning.active,
 .show>.btn-warning.dropdown-toggle {
     color: #000;
-    background-color: #ffcd39;
-    border-color: #ffc720
+    background-color: #C0883E;
+    border-color: #C0883E
 }
 
 .btn-check:checked+.btn-warning:focus,
@@ -3297,8 +3297,8 @@ fieldset:disabled .btn {
 .btn-warning:disabled,
 .btn-warning.disabled {
     color: #000;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: #C0883E;
+    border-color: #C0883E
 }
 
 .btn-danger {
@@ -3597,14 +3597,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-warning {
-    color: #ffc107;
-    border-color: #ffc107
+    color: #C0883E;
+    border-color: #C0883E
 }
 
 .btn-outline-warning:hover {
     color: #000;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: #C0883E;
+    border-color: #C0883E
 }
 
 .btn-check:focus+.btn-outline-warning,
@@ -3618,8 +3618,8 @@ fieldset:disabled .btn {
 .btn-outline-warning.active,
 .btn-outline-warning.dropdown-toggle.show {
     color: #000;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: #C0883E;
+    border-color: #C0883E
 }
 
 .btn-check:checked+.btn-outline-warning:focus,
@@ -3632,7 +3632,7 @@ fieldset:disabled .btn {
 
 .btn-outline-warning:disabled,
 .btn-outline-warning.disabled {
-    color: #ffc107;
+    color: #C0883E;
     background-color: rgba(0, 0, 0, 0)
 }
 
@@ -4740,7 +4740,7 @@ fieldset:disabled .btn {
 
 .navbar-light .navbar-nav .show>.nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-    color : #C6933D
+    color : #C0883E
 }
 
 .navbar-light .navbar-toggler {
